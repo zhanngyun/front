@@ -1,0 +1,126 @@
+<template>
+  <!--走马灯-->
+  <el-row>
+    <el-row>
+      <el-col :span="24" class="carousel">
+        <el-carousel :height="bannerHeight">
+          <el-carousel-item v-for="item in carousel" :key="item.id" >
+            <img :src="item.bannerUrl" alt="河南商丘民康医院官网|首页轮播图" width="100%" :height="bannerHeight">
+          </el-carousel-item>
+        </el-carousel>
+      </el-col>
+    </el-row>
+    <!--<el-row>-->
+      <!--<common1 active-type="notice" title="医院公告" redirect="/noticeList"></common1>-->
+      <!--<common1 active-type="news" title="医院新闻" redirect="/newsList"></common1>-->
+      <!--<common1 active-type="healthy" title="健康资讯" redirect="/healthyList"></common1>-->
+    <!--</el-row>-->
+    <!--<common3></common3>-->
+    <!--<common4></common4>-->
+    <!--<div class="section-index">-->
+      <!--<div class="title">科室导航</div>-->
+    <!--</div>-->
+    <!--<div class="clearfix"></div>-->
+    <!--<common5></common5>-->
+    <!--<div class="clearfix"></div>-->
+    <!--<common6></common6>-->
+  </el-row>
+</template>
+
+
+
+<script>
+  // import Common1 from '../../components/Common1'
+  // import Common3 from '@/components/Common3'
+  // import Common4 from '@/components/Common4'
+  // import Common5 from '@/components/Common5'
+  // import Common6 from '@/components/Common6'
+  import { getList } from '../../api/banner'
+  export default {
+    metaInfo () {
+      return {
+        title: this.pageTitle,
+        meta: [
+          {
+            name: 'keywords',
+            content: this.pageKeyWords
+          },
+          {
+            name: 'description',
+            content: this.pageDescription
+          }
+        ]
+      }
+    },
+    name: 'index',
+    data () {
+      return {
+        carousel: [],
+        cols: 8,
+        pageTitle: '河南商丘市民康医院官网',
+        pageKeyWords: '河南商丘市民康医院官网,商丘民康医院,民康医院,河南民康医院',
+        pageDescription: '河南商丘市民康医院是二级甲等医院,是一家综合医院,商丘市各县区医疗救助保险定点医疗机构。'
+      }
+    },
+    // components: {
+    //   Common1,
+    //   Common3,
+    //   Common4,
+    //   Common5,
+    //   Common6
+    // },
+    computed: {
+      bannerHeight: function () {
+        if (this.$store.state.app.device !== 'mobile') {
+          return '400px'
+        } else {
+          return '200px'
+        }
+      }
+    },
+    created () {
+      this.getList()
+    },
+    methods: {
+      getList () {
+        getList().then(response => {
+          this.carousel = response.data
+        }).catch(error => {
+          console.log(error)
+        })
+      }
+    }
+  }
+</script>
+
+<style rel="stylesheet/scss" lang="scss">
+  .el-carousel__indicator  {
+    &.is-active {
+      .el-carousel__button {
+        background-color: #01763a !important;
+      }
+    }
+    .el-carousel__button {
+      height: 3px;
+      width: 60px;
+    }
+  }
+  .mobile {
+    .el-carousel__button {
+      height: 3px;
+      width: 30px;
+    }
+  }
+  .section-index {
+    .title {
+      font-size: 24px;
+      line-height: 60px;
+      color: #333333;
+      width: 45%;
+      text-align: left;
+      margin-left: 20px;
+      float: left;
+    }
+  }
+
+</style>
