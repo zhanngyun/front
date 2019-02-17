@@ -13,7 +13,7 @@
             <swiper-slide v-for="slide in slides" :key="slide.id" @mouseenter.native="stopPlay" @mouseleave.native="play">
               <router-link  :to="'/doctorDetail/' + slide.id">
                 <div class="fd_slide">
-                  <img :src="slide.doctorPortrait" :alt="slide.doctorName"/>
+                  <img v-lazy="slide.doctorPortrait" :alt="slide.doctorName"/>
                   <div class="flexRow">
                     <div class="content">
                       <span class="slide_name">{{slide.doctorName}}</span>

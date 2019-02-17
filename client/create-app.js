@@ -13,12 +13,18 @@ import createRouter from './config/router'
 import './styles/index.scss' // global css
 
 import common from './util/commonFun.js' // 公共方法
+import VueLazyLoad from 'vue-lazyload' // 图片懒加载
+
 if (typeof window !== 'undefined') {
   require('element-ui/lib/theme-chalk/index.css')
   require('swiper/dist/css/swiper.css')
   let VueAwesomeSwiper = require('vue-awesome-swiper')
   Vue.use(VueAwesomeSwiper)
 }
+Vue.use(VueLazyLoad, {
+  error: 'https://www.hnsqmkyy.com/img/error.jpg',
+  loading: 'https://www.hnsqmkyy.com/img/loading.gif'
+})
 Vue.prototype.common = common
 Vue.use(VueRouter)
 Vue.use(Vuex)
