@@ -11,7 +11,7 @@
           <swiper :options="swiperOption" ref="mySwiper">
              <!--这部分放你要渲染的那些内容 -->
             <swiper-slide v-for="slide in slides" :key="slide.id" @mouseenter.native="stopPlay" @mouseleave.native="play">
-              <router-link  :to="'/doctorDetail/' + slide.id">
+              <router-link  :to="'/doctorInfo/' + slide.id">
                 <div class="fd_slide">
                   <img v-lazy="slide.doctorPortrait" :alt="slide.doctorName"/>
                   <div class="flexRow">

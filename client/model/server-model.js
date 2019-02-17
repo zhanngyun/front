@@ -215,5 +215,45 @@ export default {
       },
       headers: getHeaders()
     }))
+  },
+  // 医生相关
+  queryListByDoctorId (doctorId, userId) {
+    return handleRequest(request({
+      url: '/visitingTime/info/queryListByDoctorId',
+      method: 'get',
+      params: {
+        doctorId: doctorId,
+        userId: userId
+      },
+      headers: getHeaders()
+    }))
+  },
+  queryListByDoctorByDoctorId (doctorId) {
+    return handleRequest(request({
+      url: '/visitingTime/info/queryListByDoctorId',
+      method: 'get',
+      params: {
+        doctorId: doctorId
+      },
+      headers: getHeaders()
+    }))
+  },
+  getDoctorById (doctorId) {
+    return handleRequest(request({
+      url: '/doctor/info/getDoctorById',
+      method: 'get',
+      params: {
+        doctorId: doctorId
+      },
+      headers: getHeaders()
+    }))
+  },
+  ordering (data) {
+    return handleRequest(request({
+      url: '/order/info/ordering',
+      method: 'post',
+      data,
+      headers: getHeaders()
+    }))
   }
 }

@@ -65,6 +65,12 @@ export default [
         hidden: true,
         meta: { title: '科室详情', icon: 'form' },
         component: () => import('../views/sectionInfo/index.vue')
+      },
+      {
+        path: '/doctorInfo/:id(\\d+)',
+        hidden: true,
+        meta: { title: '医生详情', icon: 'form' },
+        component: () => import('../views/doctorInfo/index.vue')
       }
     ]
   },

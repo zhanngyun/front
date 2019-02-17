@@ -20,7 +20,7 @@
                   </div>
                   <div class="inner-box clearfix">
                     <span v-for="doctor in item.doctorList" v-bind:key="doctor.id">
-                      <router-link :to="{path:'doctorInfo', query: {id:doctor.id}}" >{{doctor.doctorName}}</router-link>
+                      <router-link :to="{path:'doctorInfo/' + doctor.id}" >{{doctor.doctorName}}</router-link>
                     </span>
                   </div>
                 </div>
@@ -39,7 +39,7 @@
                   </div>
                   <div class="inner-box clearfix">
                     <span v-for="doctor in item.doctorList" v-bind:key="doctor.id">
-                      <router-link :to="{path:'doctorInfo', query: {id:doctor.id}}">{{doctor.doctorName}}</router-link>
+                      <router-link :to="{path:'doctorInfo/' + doctor.id}">{{doctor.doctorName}}</router-link>
                     </span>
                   </div>
                 </div>
@@ -58,7 +58,7 @@
                   </div>
                   <div class="inner-box clearfix">
                     <span v-for="doctor in item.doctorList" v-bind:key="doctor.id">
-                      <router-link :to="{path:'doctorInfo', query: {id:doctor.id}}">{{doctor.doctorName}}</router-link>
+                      <router-link :to="{path:'doctorInfo/' + doctor.id}">{{doctor.doctorName}}</router-link>
                     </span>
                   </div>
                 </div>

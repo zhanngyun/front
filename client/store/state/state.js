@@ -24,5 +24,6 @@ export default {
   sectionInfo: '',
   sectionDoctors: [],
   userInfo: '',
-  mobile: getMobile()
+  mobile: getMobile(),
+  doctor: ''
 }

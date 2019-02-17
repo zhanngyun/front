@@ -31,7 +31,8 @@ const handleRequest = (request) => {
 }
 const getHeaders = () => {
   return {
-    'Authorization': 'eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFMyNTYifQ.eyJtb2JpbGUiOiIxODg4ODg4ODg4OCJ9.lZ9vi8sthuGwSCBAqhMuKVoP26UjQd74uHz9RWKepPI',
+    // 'Authorization': 'eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFMyNTYifQ.eyJtb2JpbGUiOiIxODg4ODg4ODg4OCJ9.lZ9vi8sthuGwSCBAqhMuKVoP26UjQd74uHz9RWKepPI',
+    'Authorization': 'eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFMyNTYifQ.eyJtb2JpbGUiOiIxNzYyMTY2OTQ1NiIsInVzZXJOYW1lIjoi5byg5LqRIiwidXNlcklkIjoiMjUiLCJleHAiOjE1NTA1MDg5NDMsIm5iZiI6MTU1MDQyMjU0M30.Moi5u9gqwGc7fTed7tkVD0CrxOWhkqR0bX7JF2E2BwE',
     'AuthorizationType': '2'
   }
 }
@@ -246,6 +247,46 @@ export default {
       params: {
         mobile: mobile
       },
+      headers: getHeaders()
+    }))
+  },
+  // 医生相关
+  queryListByDoctorId (doctorId, userId) {
+    return handleRequest(request({
+      url: '/visitingTime/info/queryListByDoctorId',
+      method: 'get',
+      params: {
+        doctorId: doctorId,
+        userId: userId
+      },
+      headers: getHeaders()
+    }))
+  },
+  queryListByDoctorByDoctorId (doctorId) {
+    return handleRequest(request({
+      url: '/visitingTime/info/queryListByDoctorId',
+      method: 'get',
+      params: {
+        doctorId: doctorId
+      },
+      headers: getHeaders()
+    }))
+  },
+  getDoctorById (doctorId) {
+    return handleRequest(request({
+      url: '/doctor/info/getDoctorById',
+      method: 'get',
+      params: {
+        doctorId: doctorId
+      },
+      headers: getHeaders()
+    }))
+  },
+  ordering (data) {
+    return handleRequest(request({
+      url: '/order/info/ordering',
+      method: 'post',
+      data,
       headers: getHeaders()
     }))
   }

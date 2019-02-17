@@ -33,7 +33,7 @@
           <ul>
             <li v-for="item in doctors" :key="item.id">
               <div class="item">
-                <router-link :to="{path:'doctorInfo/' + item.id}">
+                <router-link :to="{path:'/doctorInfo/' + item.id}">
                   <img :src="item.doctorPortrait" :alt="item.name">
                 </router-link>
                 <div class="info">

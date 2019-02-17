@@ -320,10 +320,8 @@ export default {
     const mobile = userInfo.mobile.trim()
     commit('SET_MOBILE', mobile)
     setMobile(mobile)
-    console.log('我来登录啦...', userInfo)
     return model.login(mobile, userInfo.verificationCode)
       .then(data => {
-        console.log('登录返回信息...', data)
         commit('endLoading')
         setToken(data)
         dispatch('GetInfo', mobile)
@@ -335,12 +333,11 @@ export default {
   },
   Perfect ({ dispatch, commit }, userInfo) {
     commit('startLoading')
-    console.log('我来完善信息啦...', userInfo)
     userInfo.mobile = getMobile()
     return model.perfect(userInfo)
       .then(data => {
         commit('endLoading')
-        console.log('完善信息返回信息...', data)
+        console.log('token=========', data)
         setToken(data)
         dispatch('GetInfo', userInfo.mobile)
       })
@@ -351,7 +348,6 @@ export default {
   },
   GetInfo ({ commit }, mobile) {
     commit('startLoading')
-    console.log('我来获取信息啦..', mobile)
     return model.getInfo(mobile)
       .then(data => {
         commit('endLoading')
@@ -370,5 +366,55 @@ export default {
       removeToken()
       resolve()
     })
+  },
+  // 医生信息
+  queryListByDoctorId ({ commit }, {doctorId, userId}) {
+    commit('startLoading')
+    return model.queryListByDoctorId(doctorId, userId)
+      .then(data => {
+        commit('endLoading')
+        return data
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  queryListByDoctorByDoctorId ({ commit }, doctorId) {
+    commit('startLoading')
+    return model.queryListByDoctorByDoctorId(doctorId)
+      .then(data => {
+        commit('endLoading')
+        return data
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  getDoctorById ({ commit }, doctorId) {
+    commit('startLoading')
+    return model.getDoctorById(doctorId)
+      .then(data => {
+        commit('endLoading')
+        commit('doctor', data)
+        return data
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  ordering ({ commit }, orderForm) {
+    commit('startLoading')
+    return model.ordering(orderForm)
+      .then(data => {
+        commit('endLoading')
+        return data
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
   }
 }

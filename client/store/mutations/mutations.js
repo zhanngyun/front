@@ -76,5 +76,8 @@ export default {
   },
   userInfo (state, userInfo) {
     state.userInfo = userInfo
+  },
+  doctor (state, doctor) {
+    state.doctor = doctor
   }
 }
