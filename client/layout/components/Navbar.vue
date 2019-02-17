@@ -148,7 +148,7 @@ export default {
       }
     },
     setTo (path) {
-      return '/' + path
+      return path
     }
   }
 }

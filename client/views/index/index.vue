@@ -95,6 +95,17 @@
       await store.dispatch('SectionInfoByType', 2)
       await store.dispatch('SectionInfoByType', 3)
       await store.dispatch('getEnvList', {current: 1, size: 20})
+    },
+    created () {
+      this.$store.dispatch('getNoticeList', {current: 1, size: 4}).then(data => {
+        this.noticeList = data
+      })
+      this.$store.dispatch('getNewsList', {current: 1, size: 4}).then(data => {
+        this.newsList = data
+      })
+      this.$store.dispatch('getHealthyList', {current: 1, size: 4}).then(data => {
+        this.healthyList = data
+      })
     }
   }
 </script>

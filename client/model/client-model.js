@@ -51,5 +51,77 @@ export default {
       },
       headers: getHeaders()
     }))
+  },
+  getBannerList () {
+    return handleRequest(request({
+      url: '/banner/info/list',
+      method: 'get',
+      headers: getHeaders()
+    }))
+  },
+  getNoticeList (current, size) {
+    return handleRequest(request({
+      url: '/notice/info/page',
+      method: 'get',
+      params: {
+        current: current,
+        size: size
+      },
+      headers: getHeaders()
+    }))
+  },
+  getNewsList (current, size) {
+    return handleRequest(request({
+      url: '/news/info/page',
+      method: 'get',
+      params: {
+        current: current,
+        size: size
+      },
+      headers: getHeaders()
+    }))
+  },
+  getHealthyList (current, size) {
+    return handleRequest(request({
+      url: '/healthy/info/page',
+      method: 'get',
+      params: {
+        current: current,
+        size: size
+      },
+      headers: getHeaders()
+    }))
+  },
+  queryDoctorList (current, size) {
+    return handleRequest(request({
+      url: '/doctor/info/page',
+      method: 'get',
+      params: {
+        current: current,
+        size: size
+      },
+      headers: getHeaders()
+    }))
+  },
+  SectionInfoByType (sectionType) {
+    return handleRequest(request({
+      url: '/section/info/getSelectionByType',
+      method: 'get',
+      params: {
+        sectionType
+      },
+      headers: getHeaders()
+    }))
+  },
+  getEnvList (current, size) {
+    return handleRequest(request({
+      url: '/env/info/page',
+      method: 'get',
+      params: {
+        current: current,
+        size: size
+      },
+      headers: getHeaders()
+    }))
   }
 }

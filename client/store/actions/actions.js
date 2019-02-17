@@ -75,6 +75,7 @@ export default {
       .then(data => {
         commit('endLoading')
         commit('noticeList', data)
+        return data
       })
       .catch(err => {
         commit('endLoading')
@@ -87,6 +88,7 @@ export default {
       .then(data => {
         commit('endLoading')
         commit('newsList', data)
+        return data
       })
       .catch(err => {
         commit('endLoading')
@@ -99,6 +101,7 @@ export default {
       .then(data => {
         commit('endLoading')
         commit('healthyList', data)
+        return data
       })
       .catch(err => {
         commit('endLoading')
