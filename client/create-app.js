@@ -15,6 +15,9 @@ import './styles/index.scss' // global css
 import common from './util/commonFun.js' // 公共方法
 if (typeof window !== 'undefined') {
   require('element-ui/lib/theme-chalk/index.css')
+  require('swiper/dist/css/swiper.css')
+  let VueAwesomeSwiper = require('vue-awesome-swiper')
+  Vue.use(VueAwesomeSwiper)
 }
 Vue.prototype.common = common
 Vue.use(VueRouter)

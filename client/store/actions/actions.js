@@ -107,5 +107,17 @@ export default {
         commit('endLoading')
         handleError(err)
       })
+  },
+  queryDoctorList ({ commit }, {current, size}) {
+    commit('startLoading')
+    return model.queryDoctorList(current, size)
+      .then(data => {
+        commit('endLoading')
+        commit('doctorList', data)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
   }
 }

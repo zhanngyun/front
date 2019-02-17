@@ -93,6 +93,17 @@ export default {
       },
       headers: getHeaders()
     }))
+  },
+  queryDoctorList (current, size) {
+    return handleRequest(request({
+      url: '/doctor/info/page',
+      method: 'get',
+      params: {
+        current: current,
+        size: size
+      },
+      headers: getHeaders()
+    }))
   }
 
 }

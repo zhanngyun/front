@@ -6,5 +6,6 @@ export default {
   bannerList: {},
   noticeList: {},
   newsList: {},
-  healthyList: {}
+  healthyList: {},
+  doctorList: {}
 }

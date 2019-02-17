@@ -16,7 +16,7 @@
       <common1 active-type="healthy" title="健康资讯" redirect="/healthyList" :records="healthyList.records"></common1>
     </el-row>
     <common3></common3>
-    <!--<common4></common4>-->
+    <common4 :slides="doctorList.records"></common4>
     <!--<div class="section-index">-->
       <!--<div class="title">科室导航</div>-->
     <!--</div>-->
@@ -32,7 +32,7 @@
 <script>
   import Common1 from '../../components/Common1/index.vue'
   import Common3 from '../../components/Common3/index.vue'
-  // import Common4 from '@/components/Common4'
+  import Common4 from '../../components/Common4/index.vue'
   // import Common5 from '@/components/Common5'
   // import Common6 from '@/components/Common6'
   export default {
@@ -58,6 +58,7 @@
         noticeList: this.$store.state.noticeList,
         newsList: this.$store.state.newsList,
         healthyList: this.$store.state.healthyList,
+        doctorList: this.$store.state.doctorList,
         cols: 8,
         pageTitle: '河南商丘市民康医院官网',
         pageKeyWords: '河南商丘市民康医院官网,商丘民康医院,民康医院,河南民康医院',
@@ -66,8 +67,8 @@
     },
     components: {
       Common1,
-      Common3
-      // Common4,
+      Common3,
+      Common4
       // Common5,
       // Common6
     },
@@ -85,6 +86,7 @@
       await store.dispatch('getNoticeList', {current: 1, size: 4})
       await store.dispatch('getNewsList', {current: 1, size: 4})
       await store.dispatch('getHealthyList', {current: 1, size: 4})
+      await store.dispatch('queryDoctorList', {current: 1, size: 20})
     }
   }
 </script>

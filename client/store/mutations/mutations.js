@@ -25,5 +25,8 @@ export default {
   },
   healthyList (state, healthyList) {
     state.healthyList = healthyList
+  },
+  doctorList (state, doctorList) {
+    state.doctorList = doctorList
   }
 }
