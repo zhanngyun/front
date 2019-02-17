@@ -3,5 +3,6 @@ export default {
   noticePre: {},
   noticeAft: {},
   loading: false,
-  bannerList: {}
+  bannerList: {},
+  noticeList: {}
 }

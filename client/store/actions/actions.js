@@ -71,5 +71,17 @@ export default {
         commit('endLoading')
         handleError(err)
       })
+  },
+  getNoticeList ({ commit }, {current, size}) {
+    commit('startLoading')
+    return model.getNoticeList(current, size)
+      .then(data => {
+        commit('endLoading')
+        commit('noticeList', data)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
   }
 }

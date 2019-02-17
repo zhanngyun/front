@@ -10,11 +10,11 @@
         </el-carousel>
       </el-col>
     </el-row>
-    <!--<el-row>-->
-      <!--<common1 active-type="notice" title="医院公告" redirect="/noticeList"></common1>-->
+    <el-row>
+      <common1 active-type="notice" title="医院公告" redirect="/noticeList" :records="noticeList.records"></common1>
       <!--<common1 active-type="news" title="医院新闻" redirect="/newsList"></common1>-->
       <!--<common1 active-type="healthy" title="健康资讯" redirect="/healthyList"></common1>-->
-    <!--</el-row>-->
+    </el-row>
     <!--<common3></common3>-->
     <!--<common4></common4>-->
     <!--<div class="section-index">-->
@@ -30,7 +30,7 @@
 
 
 <script>
-  // import Common1 from '../../components/Common1'
+  import Common1 from '../../components/Common1/index.vue'
   // import Common3 from '@/components/Common3'
   // import Common4 from '@/components/Common4'
   // import Common5 from '@/components/Common5'
@@ -55,19 +55,20 @@
     data () {
       return {
         carousel: this.$store.state.bannerList,
+        noticeList: this.$store.state.noticeList,
         cols: 8,
         pageTitle: '河南商丘市民康医院官网',
         pageKeyWords: '河南商丘市民康医院官网,商丘民康医院,民康医院,河南民康医院',
         pageDescription: '河南商丘市民康医院是二级甲等医院,是一家综合医院,商丘市各县区医疗救助保险定点医疗机构。'
       }
     },
-    // components: {
-    //   Common1,
-    //   Common3,
-    //   Common4,
-    //   Common5,
-    //   Common6
-    // },
+    components: {
+      Common1
+      // Common3,
+      // Common4,
+      // Common5,
+      // Common6
+    },
     computed: {
       bannerHeight: function () {
         if (this.$store.state.app.device !== 'mobile') {
@@ -79,6 +80,7 @@
     },
     async asyncData ({route, router, store}) {
       await store.dispatch('getBannerList')
+      await store.dispatch('getNoticeList', {current: 1, size: 4})
     }
   }
 </script>

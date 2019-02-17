@@ -16,5 +16,8 @@ export default {
   },
   bannerList (state, bannerList) {
     state.bannerList = bannerList
+  },
+  noticeList (state, noticeList) {
+    state.noticeList = noticeList
   }
 }

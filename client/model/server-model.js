@@ -60,6 +60,17 @@ export default {
       method: 'get',
       headers: getHeaders()
     }))
+  },
+  getNoticeList (current, size) {
+    return handleRequest(request({
+      url: '/notice/info/page',
+      method: 'get',
+      params: {
+        current: current,
+        size: size
+      },
+      headers: getHeaders()
+    }))
   }
 
 }
