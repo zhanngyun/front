@@ -117,6 +117,18 @@ export default {
         handleError(err)
       })
   },
+  getEnvList ({ commit }, {current, size}) {
+    commit('startLoading')
+    return model.getEnvList(current, size)
+      .then(data => {
+        commit('endLoading')
+        commit('envList', data)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
   SectionInfoByType ({ commit }, sectionType) {
     commit('startLoading')
     return model.SectionInfoByType(sectionType)

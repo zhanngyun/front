@@ -8,6 +8,7 @@ export default {
   newsList: {},
   healthyList: {},
   doctorList: {},
+  envList: {},
   selectList1: [],
   selectList2: [],
   selectList3: []

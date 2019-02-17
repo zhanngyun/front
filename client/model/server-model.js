@@ -114,6 +114,16 @@ export default {
       },
       headers: getHeaders()
     }))
+  },
+  getEnvList (current, size) {
+    return handleRequest(request({
+      url: '/env/info/page',
+      method: 'get',
+      params: {
+        current: current,
+        size: size
+      },
+      headers: getHeaders()
+    }))
   }
-
 }

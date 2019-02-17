@@ -98,7 +98,6 @@ export default {
     changeChild (e) {
       this.child = parseInt(e.srcElement.id) + 1
       this.imgSrc = this.records[parseInt(e.srcElement.id)].sectionImg
-      console.log('this.imgSrc==', this.imgSrc)
       this.title = this.records[parseInt(e.srcElement.id)].sectionName
       this.summary = this.records[parseInt(e.srcElement.id)].sectionSummary
     }

@@ -37,5 +37,8 @@ export default {
   },
   selectList3 (state, selectList3) {
     state.selectList3 = selectList3
+  },
+  envList (state, envList) {
+    state.envList = envList
   }
 }
