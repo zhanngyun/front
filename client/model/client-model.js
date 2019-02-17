@@ -173,5 +173,13 @@ export default {
       method: 'get',
       headers: getHeaders()
     }))
+  },
+  // 医生全部列表
+  getSectionsAndDoctors () {
+    return handleRequest(request({
+      url: '/doctor/info/getSectionsAndDoctors',
+      method: 'get',
+      headers: getHeaders()
+    }))
   }
 }

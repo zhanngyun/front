@@ -13,6 +13,11 @@ export default [
         component: () => import('../views/index/index.vue')
       },
       {
+        path: '/doctorList',
+        meta: { title: '院内医生', icon: 'form' },
+        component: () => import('../views/doctor/index.vue')
+      },
+      {
         path: '/noticeList',
         meta: { title: '院内公告', icon: 'form' },
         component: () => import('../views/noticeList/index.vue')

@@ -52,7 +52,7 @@ export default {
     }
   },
   async asyncData ({route, router, store}) {
-    await store.dispatch('getAllEnvList', route.params.id)
+    await store.dispatch('getAllEnvList')
   },
   created () {
     if (this.records.size === 0) {

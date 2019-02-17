@@ -251,5 +251,19 @@ export default {
         commit('endLoading')
         handleError(err)
       })
+  },
+  // 医生全部列表
+  getSectionsAndDoctors ({ commit }) {
+    commit('startLoading')
+    return model.getSectionsAndDoctors()
+      .then(data => {
+        commit('endLoading')
+        commit('doctorAll', data)
+        return data
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
   }
 }

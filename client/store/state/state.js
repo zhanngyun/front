@@ -18,5 +18,6 @@ export default {
   selectList1: [],
   selectList2: [],
   selectList3: [],
-  envAllList: []
+  envAllList: [],
+  doctorAll: []
 }

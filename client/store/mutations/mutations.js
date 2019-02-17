@@ -61,5 +61,8 @@ export default {
   },
   envAllList (state, envAllList) {
     state.envAllList = envAllList
+  },
+  doctorAll (state, doctorAll) {
+    state.doctorAll = doctorAll
   }
 }
