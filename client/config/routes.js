@@ -18,6 +18,11 @@ export default [
         component: () => import('../views/doctor/index.vue')
       },
       {
+        path: '/sectionList',
+        meta: { title: '院内科室', icon: 'form' },
+        component: () => import('../views/section/index.vue')
+      },
+      {
         path: '/noticeList',
         meta: { title: '院内公告', icon: 'form' },
         component: () => import('../views/noticeList/index.vue')

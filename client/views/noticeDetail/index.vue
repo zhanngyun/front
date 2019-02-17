@@ -66,7 +66,7 @@ export default {
     await store.dispatch('getPreAndAft', route.params.id)
   },
   created () {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && this.notice === '') {
       const id = this.common.getId()
       const _that = this
       this.$store.dispatch('getNoticeById', id).then(data => {

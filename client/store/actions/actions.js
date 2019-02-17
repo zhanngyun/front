@@ -63,6 +63,7 @@ export default {
       .then(data => {
         commit('endLoading')
         commit('bannerList', data)
+        return data
       })
       .catch(err => {
         commit('endLoading')
@@ -114,6 +115,7 @@ export default {
       .then(data => {
         commit('endLoading')
         commit('doctorList', data)
+        return data
       })
       .catch(err => {
         commit('endLoading')
@@ -126,6 +128,7 @@ export default {
       .then(data => {
         commit('endLoading')
         commit('envList', data)
+        return data
       })
       .catch(err => {
         commit('endLoading')
@@ -144,6 +147,7 @@ export default {
         } else {
           commit('selectList3', data)
         }
+        return data
       })
       .catch(err => {
         commit('endLoading')

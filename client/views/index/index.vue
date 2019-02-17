@@ -97,15 +97,38 @@
       await store.dispatch('getEnvList', {current: 1, size: 20})
     },
     created () {
-      this.$store.dispatch('getNoticeList', {current: 1, size: 4}).then(data => {
-        this.noticeList = data
-      })
-      this.$store.dispatch('getNewsList', {current: 1, size: 4}).then(data => {
-        this.newsList = data
-      })
-      this.$store.dispatch('getHealthyList', {current: 1, size: 4}).then(data => {
-        this.healthyList = data
-      })
+      const _that = this
+      if (this.carousel.size === 0) {
+        this.$store.dispatch('getBannerList').then(data => {
+          _that.carousel = data
+        })
+        this.$store.dispatch('queryDoctorList', {current: 1, size: 20}).then(data => {
+          _that.doctorList = data
+        })
+        this.$store.dispatch('SectionInfoByType', 1).then(data => {
+          _that.type1 = data
+        })
+        this.$store.dispatch('SectionInfoByType', 2).then(data => {
+          _that.type2 = data
+        })
+        this.$store.dispatch('SectionInfoByType', 3).then(data => {
+          _that.type3 = data
+        })
+        this.$store.dispatch('getEnvList', {current: 1, size: 20}).then(data => {
+          _that.envList = data
+        })
+      }
+      if (this.carousel.size === 0 || this.noticeList.size !== 4 || this.newsList.size !== 4 || this.healthyList.size !== 4) {
+        this.$store.dispatch('getNoticeList', {current: 1, size: 4}).then(data => {
+          _that.noticeList = data
+        })
+        this.$store.dispatch('getNewsList', {current: 1, size: 4}).then(data => {
+          _that.newsList = data
+        })
+        this.$store.dispatch('getHealthyList', {current: 1, size: 4}).then(data => {
+          _that.healthyList = data
+        })
+      }
     }
   }
 </script>

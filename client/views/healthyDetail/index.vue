@@ -66,7 +66,7 @@
       await store.dispatch('getHealthyPreAndAft', route.params.id)
     },
     created () {
-      if (typeof window !== 'undefined') {
+      if (typeof window !== 'undefined' && this.healthy === '') {
         const id = this.common.getId()
         const _that = this
         this.$store.dispatch('getHealthyById', id).then(data => {
