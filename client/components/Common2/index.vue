@@ -3,7 +3,7 @@
     <div class="title">了解这些有可能对您的就诊有所帮助</div>
     <div class="list clearfix">
       <div class="item i1">
-        <a class="vertical" href="#">
+        <a class="vertical" href="https://www.hnsqmkyy.com">
           <div class="icon-box">
             <div class="img">
             </div>
@@ -11,7 +11,7 @@
           </div>
         </a>
       </div><div class="item i2">
-      <a class="vertical" href="#">
+      <a class="vertical" href="https://www.hnsqmkyy.com">
         <div class="icon-box">
           <div class="img">
           </div>
@@ -19,7 +19,7 @@
         </div>
       </a>
     </div><div class="item i3">
-      <a class="vertical" href="#">
+      <a class="vertical" href="https://www.hnsqmkyy.com">
         <div class="icon-box">
           <div class="img">
           </div>
@@ -28,7 +28,7 @@
       </a>
     </div>
       <div class="item i4">
-        <a class="vertical" href="#">
+        <a class="vertical" href="https://www.hnsqmkyy.com/healthyList">
           <div class="icon-box">
             <div class="img">
             </div>

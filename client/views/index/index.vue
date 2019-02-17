@@ -15,7 +15,7 @@
       <common1 active-type="news" title="医院新闻" redirect="/newsList" :records="newsList.records"></common1>
       <common1 active-type="healthy" title="健康资讯" redirect="/healthyList" :records="healthyList.records"></common1>
     </el-row>
-    <!--<common3></common3>-->
+    <common3></common3>
     <!--<common4></common4>-->
     <!--<div class="section-index">-->
       <!--<div class="title">科室导航</div>-->
@@ -31,7 +31,7 @@
 
 <script>
   import Common1 from '../../components/Common1/index.vue'
-  // import Common3 from '@/components/Common3'
+  import Common3 from '../../components/Common3/index.vue'
   // import Common4 from '@/components/Common4'
   // import Common5 from '@/components/Common5'
   // import Common6 from '@/components/Common6'
@@ -65,8 +65,8 @@
       }
     },
     components: {
-      Common1
-      // Common3,
+      Common1,
+      Common3
       // Common4,
       // Common5,
       // Common6
