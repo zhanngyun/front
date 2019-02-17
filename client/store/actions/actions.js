@@ -149,5 +149,93 @@ export default {
         commit('endLoading')
         handleError(err)
       })
+  },
+  // 院内新闻详情
+  getNewsById ({ dispatch, commit }, id) {
+    commit('startLoading')
+    return model.getNewsById(id)
+      .then(data => {
+        commit('endLoading')
+        commit('news', data)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  updateNewsClickNum ({ commit }, id) {
+    commit('startLoading')
+    return model.updateNewsClickNum(id)
+      .then(data => {
+        commit('endLoading')
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  getNewsPreAndAft ({ commit }, id) {
+    commit('startLoading')
+    return model.getNewsPreAndAft(id)
+      .then(data => {
+        commit('endLoading')
+        commit('newsPre', '')
+        commit('newsAft', '')
+        data.forEach(function (value, index) {
+          if (value.id < id) {
+            commit('newsPre', value)
+          } else {
+            commit('newsAft', value)
+          }
+        })
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  // 健康资讯详情
+  getHealthyById ({ dispatch, commit }, id) {
+    commit('startLoading')
+    return model.getHealthyById(id)
+      .then(data => {
+        commit('endLoading')
+        commit('healthy', data)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  updateHealthyClickNum ({ commit }, id) {
+    commit('startLoading')
+    return model.updateHealthyClickNum(id)
+      .then(data => {
+        commit('endLoading')
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  getHealthyPreAndAft ({ commit }, id) {
+    commit('startLoading')
+    return model.getHealthyPreAndAft(id)
+      .then(data => {
+        commit('endLoading')
+        commit('healthyPre', '')
+        commit('healthyAft', '')
+        data.forEach(function (value, index) {
+          if (value.id < id) {
+            commit('healthyPre', value)
+          } else {
+            commit('healthyAft', value)
+          }
+        })
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
   }
 }

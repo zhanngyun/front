@@ -32,6 +32,18 @@ export default [
         hidden: true,
         meta: { title: '公告详情', icon: 'form' },
         component: () => import('../views/noticeDetail/index.vue')
+      },
+      {
+        path: '/newsDetail/:id(\\d+)',
+        hidden: true,
+        meta: { title: '新闻详情', icon: 'form' },
+        component: () => import('../views/newsDetail/index.vue')
+      },
+      {
+        path: '/healthyDetail/:id(\\d+)',
+        hidden: true,
+        meta: { title: '健康资讯', icon: 'form' },
+        component: () => import('../views/healthyDetail/index.vue')
       }
     ]
   }

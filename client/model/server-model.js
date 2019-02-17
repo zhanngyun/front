@@ -125,5 +125,47 @@ export default {
       },
       headers: getHeaders()
     }))
+  },
+  // 院内新闻
+  getNewsById (id) {
+    return handleRequest(request.get(`/news/info/getNewsById?newsId=${id}`, {
+      headers: getHeaders()
+    }))
+  },
+  getNewsPreAndAft (id) {
+    return handleRequest(request.get(`/news/info/getPreAndAft?newsId=${id}`, {
+      headers: getHeaders()
+    }))
+  },
+  updateNewsClickNum (id) {
+    return handleRequest(request({
+      url: '/news/info/updateClickNum',
+      method: 'post',
+      data: {
+        id
+      },
+      headers: getHeaders()
+    }))
+  },
+  // 健康资讯
+  getHealthyById (id) {
+    return handleRequest(request.get(`/healthy/info/getHealthyById?healthyId=${id}`, {
+      headers: getHeaders()
+    }))
+  },
+  getHealthyPreAndAft (id) {
+    return handleRequest(request.get(`/healthy/info/getPreAndAft?healthyId=${id}`, {
+      headers: getHeaders()
+    }))
+  },
+  updateHealthyClickNum (id) {
+    return handleRequest(request({
+      url: '/healthy/info/updateClickNum',
+      method: 'post',
+      data: {
+        id
+      },
+      headers: getHeaders()
+    }))
   }
 }

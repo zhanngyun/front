@@ -8,6 +8,24 @@ export default {
   noticeAft (state, noticeAft) {
     state.noticeAft = noticeAft
   },
+  news (state, news) {
+    state.news = news
+  },
+  newsPre (state, newsPre) {
+    state.newsPre = newsPre
+  },
+  newsAft (state, newsAft) {
+    state.newsAft = newsAft
+  },
+  healthy (state, healthy) {
+    state.healthy = healthy
+  },
+  healthyPre (state, healthyPre) {
+    state.healthyPre = healthyPre
+  },
+  healthyAft (state, healthyAft) {
+    state.healthyAft = healthyAft
+  },
   startLoading (state) {
     state.loading = true
   },

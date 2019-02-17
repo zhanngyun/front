@@ -6,7 +6,7 @@
         <div class="list">
           <ul>
             <li v-for="item in list" :key="item.id">
-              <router-link class="ellipsis after" :to="{path:'healthyDetail', query: {id:item.id}}">{{item.healthyTitle}}</router-link>
+              <router-link class="ellipsis after" :to="{path:'healthyDetail/' + item.id}">{{item.healthyTitle}}</router-link>
               <span>{{item.healthyCreateTime.substring(0,10)}}</span>
             </li>
           </ul>
