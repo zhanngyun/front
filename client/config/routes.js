@@ -18,6 +18,16 @@ export default [
         component: () => import('../views/noticeList/index.vue')
       },
       {
+        path: '/newsList',
+        meta: { title: '院内新闻', icon: 'form' },
+        component: () => import('../views/newsList/index.vue')
+      },
+      {
+        path: '/healthyList',
+        meta: { title: '健康资讯', icon: 'form' },
+        component: () => import('../views/healthyList/index.vue')
+      },
+      {
         path: '/noticeDetail/:id(\\d+)',
         hidden: true,
         meta: { title: '公告详情', icon: 'form' },
