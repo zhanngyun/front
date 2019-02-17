@@ -55,7 +55,7 @@ export default {
     await store.dispatch('getAllEnvList')
   },
   created () {
-    if (this.records.size === 0) {
+    if (this.records.length === 0) {
       const _that = this
       this.$store.dispatch('getAllEnvList').then(data => {
         _that.records = data

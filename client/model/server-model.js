@@ -183,5 +183,25 @@ export default {
       method: 'get',
       headers: getHeaders()
     }))
+  },
+  // 科室详情
+  getSectionById (id) {
+    return handleRequest(request({
+      url: `/section/info/getSectionById?sectionId=${id}`,
+      method: 'get',
+      headers: getHeaders()
+    }))
+  },
+  queryDoctorsBySectionId (id) {
+    return handleRequest(request({
+      url: '/doctor/info/page',
+      method: 'get',
+      params: {
+        current: 1,
+        size: 5,
+        sectionId: id
+      },
+      headers: getHeaders()
+    }))
   }
 }

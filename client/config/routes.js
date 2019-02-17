@@ -57,8 +57,14 @@ export default [
       {
         path: '/healthyDetail/:id(\\d+)',
         hidden: true,
-        meta: { title: '健康资讯', icon: 'form' },
+        meta: { title: '健康资讯详情', icon: 'form' },
         component: () => import('../views/healthyDetail/index.vue')
+      },
+      {
+        path: '/sectionInfo/:id(\\d+)',
+        hidden: true,
+        meta: { title: '科室详情', icon: 'form' },
+        component: () => import('../views/sectionInfo/index.vue')
       }
     ]
   }

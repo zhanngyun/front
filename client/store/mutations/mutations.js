@@ -64,5 +64,11 @@ export default {
   },
   doctorAll (state, doctorAll) {
     state.doctorAll = doctorAll
+  },
+  sectionInfo (state, sectionInfo) {
+    state.sectionInfo = sectionInfo
+  },
+  sectionDoctors (state, sectionDoctors) {
+    state.sectionDoctors = sectionDoctors
   }
 }

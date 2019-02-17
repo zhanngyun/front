@@ -269,5 +269,32 @@ export default {
         commit('endLoading')
         handleError(err)
       })
+  },
+  // 科室详情
+  getSectionById ({ commit }, id) {
+    commit('startLoading')
+    return model.getSectionById(id)
+      .then(data => {
+        commit('endLoading')
+        commit('sectionInfo', data)
+        return data
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  queryDoctorsBySectionId ({ commit }, id) {
+    commit('startLoading')
+    return model.queryDoctorsBySectionId(id)
+      .then(data => {
+        commit('endLoading')
+        commit('sectionDoctors', data)
+        return data
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
   }
 }

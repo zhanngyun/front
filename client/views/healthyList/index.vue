@@ -47,7 +47,7 @@ export default {
   name: 'dashboard',
   data () {
     return {
-      list: '',
+      list: [],
       total: 0,
       currentPage: 1,
       pageSize: 10,

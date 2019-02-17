@@ -87,17 +87,18 @@ export default {
   },
   created () {
     const _that = this
-    if (this.sections1.size === 0) {
+    console.log('查看科室是否执行该段代码===', this.sections1, this.sections1.length === 0)
+    if (this.sections1.length === 0) {
       this.$store.dispatch('SectionInfoByType', 1).then(data => {
         _that.sections1 = data
       })
     }
-    if (this.sections2.size === 0) {
+    if (this.sections2.length === 0) {
       this.$store.dispatch('SectionInfoByType', 2).then(data => {
         _that.sections2 = data
       })
     }
-    if (this.sections3.size === 0) {
+    if (this.sections3.length === 0) {
       this.$store.dispatch('SectionInfoByType', 3).then(data => {
         _that.sections3 = data
       })

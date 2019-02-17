@@ -98,7 +98,7 @@
     },
     created () {
       const _that = this
-      if (this.carousel.size === 0) {
+      if (this.carousel.length === 0) {
         this.$store.dispatch('getBannerList').then(data => {
           _that.carousel = data
         })
@@ -118,7 +118,7 @@
           _that.envList = data
         })
       }
-      if (this.carousel.size === 0 || this.noticeList.size !== 4 || this.newsList.size !== 4 || this.healthyList.size !== 4) {
+      if (this.carousel.length === 0 || this.noticeList.length !== 4 || this.newsList.length !== 4 || this.healthyList.length !== 4) {
         this.$store.dispatch('getNoticeList', {current: 1, size: 4}).then(data => {
           _that.noticeList = data
         })
