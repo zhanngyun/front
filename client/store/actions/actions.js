@@ -237,5 +237,19 @@ export default {
         commit('endLoading')
         handleError(err)
       })
+  },
+  // 院内医疗环境
+  getAllEnvList ({ commit }) {
+    commit('startLoading')
+    return model.getAllEnvList()
+      .then(data => {
+        commit('endLoading')
+        commit('envAllList', data)
+        return data
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
   }
 }

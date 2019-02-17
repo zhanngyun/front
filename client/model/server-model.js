@@ -167,5 +167,13 @@ export default {
       },
       headers: getHeaders()
     }))
+  },
+  // 院内医疗环境
+  getAllEnvList () {
+    return handleRequest(request({
+      url: '/env/info/list',
+      method: 'get',
+      headers: getHeaders()
+    }))
   }
 }

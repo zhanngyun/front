@@ -148,6 +148,9 @@ export default {
       }
     },
     setTo (path) {
+      if (path === '') {
+        return '/'
+      }
       return path
     }
   }

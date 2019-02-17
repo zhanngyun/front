@@ -28,6 +28,11 @@ export default [
         component: () => import('../views/healthyList/index.vue')
       },
       {
+        path: '/envList',
+        meta: { title: '医疗环境', icon: 'form' },
+        component: () => import('../views/env/index.vue')
+      },
+      {
         path: '/noticeDetail/:id(\\d+)',
         hidden: true,
         meta: { title: '公告详情', icon: 'form' },

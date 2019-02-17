@@ -58,5 +58,8 @@ export default {
   },
   envList (state, envList) {
     state.envList = envList
+  },
+  envAllList (state, envAllList) {
+    state.envAllList = envAllList
   }
 }

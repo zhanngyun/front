@@ -17,5 +17,6 @@ export default {
   envList: {},
   selectList1: [],
   selectList2: [],
-  selectList3: []
+  selectList3: [],
+  envAllList: []
 }
