@@ -64,7 +64,6 @@ export default {
     await store.dispatch('getNoticeById', route.params.id)
     await store.dispatch('updateClickNum', route.params.id)
     await store.dispatch('getPreAndAft', route.params.id)
-    console.log('asyncData点击....')
   },
   created () {
     if (typeof window !== 'undefined') {

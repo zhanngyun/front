@@ -4,5 +4,7 @@ export default {
   noticeAft: {},
   loading: false,
   bannerList: {},
-  noticeList: {}
+  noticeList: {},
+  newsList: {},
+  healthyList: {}
 }

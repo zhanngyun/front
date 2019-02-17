@@ -83,5 +83,29 @@ export default {
         commit('endLoading')
         handleError(err)
       })
+  },
+  getNewsList ({ commit }, {current, size}) {
+    commit('startLoading')
+    return model.getNewsList(current, size)
+      .then(data => {
+        commit('endLoading')
+        commit('newsList', data)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  getHealthyList ({ commit }, {current, size}) {
+    commit('startLoading')
+    return model.getHealthyList(current, size)
+      .then(data => {
+        commit('endLoading')
+        commit('healthyList', data)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
   }
 }

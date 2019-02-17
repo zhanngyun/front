@@ -12,8 +12,8 @@
     </el-row>
     <el-row>
       <common1 active-type="notice" title="医院公告" redirect="/noticeList" :records="noticeList.records"></common1>
-      <!--<common1 active-type="news" title="医院新闻" redirect="/newsList"></common1>-->
-      <!--<common1 active-type="healthy" title="健康资讯" redirect="/healthyList"></common1>-->
+      <common1 active-type="news" title="医院新闻" redirect="/newsList" :records="newsList.records"></common1>
+      <common1 active-type="healthy" title="健康资讯" redirect="/healthyList" :records="healthyList.records"></common1>
     </el-row>
     <!--<common3></common3>-->
     <!--<common4></common4>-->
@@ -56,6 +56,8 @@
       return {
         carousel: this.$store.state.bannerList,
         noticeList: this.$store.state.noticeList,
+        newsList: this.$store.state.newsList,
+        healthyList: this.$store.state.healthyList,
         cols: 8,
         pageTitle: '河南商丘市民康医院官网',
         pageKeyWords: '河南商丘市民康医院官网,商丘民康医院,民康医院,河南民康医院',
@@ -81,6 +83,8 @@
     async asyncData ({route, router, store}) {
       await store.dispatch('getBannerList')
       await store.dispatch('getNoticeList', {current: 1, size: 4})
+      await store.dispatch('getNewsList', {current: 1, size: 4})
+      await store.dispatch('getHealthyList', {current: 1, size: 4})
     }
   }
 </script>

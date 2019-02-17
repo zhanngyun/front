@@ -71,6 +71,28 @@ export default {
       },
       headers: getHeaders()
     }))
+  },
+  getNewsList (current, size) {
+    return handleRequest(request({
+      url: '/news/info/page',
+      method: 'get',
+      params: {
+        current: current,
+        size: size
+      },
+      headers: getHeaders()
+    }))
+  },
+  getHealthyList (current, size) {
+    return handleRequest(request({
+      url: '/healthy/info/page',
+      method: 'get',
+      params: {
+        current: current,
+        size: size
+      },
+      headers: getHeaders()
+    }))
   }
 
 }

@@ -19,5 +19,11 @@ export default {
   },
   noticeList (state, noticeList) {
     state.noticeList = noticeList
+  },
+  newsList (state, newsList) {
+    state.newsList = newsList
+  },
+  healthyList (state, healthyList) {
+    state.healthyList = healthyList
   }
 }
