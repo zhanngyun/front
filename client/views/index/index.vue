@@ -35,7 +35,6 @@
   // import Common4 from '@/components/Common4'
   // import Common5 from '@/components/Common5'
   // import Common6 from '@/components/Common6'
-  import { getList } from '../../api/banner'
   export default {
     metaInfo () {
       return {
@@ -55,7 +54,7 @@
     name: 'index',
     data () {
       return {
-        carousel: [],
+        carousel: this.$store.state.bannerList,
         cols: 8,
         pageTitle: '河南商丘市民康医院官网',
         pageKeyWords: '河南商丘市民康医院官网,商丘民康医院,民康医院,河南民康医院',
@@ -78,17 +77,8 @@
         }
       }
     },
-    created () {
-      this.getList()
-    },
-    methods: {
-      getList () {
-        getList().then(response => {
-          this.carousel = response.data
-        }).catch(error => {
-          console.log(error)
-        })
-      }
+    async asyncData ({route, router, store}) {
+      await store.dispatch('getBannerList')
     }
   }
 </script>

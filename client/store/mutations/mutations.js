@@ -13,5 +13,8 @@ export default {
   },
   endLoading (state) {
     state.loading = false
+  },
+  bannerList (state, bannerList) {
+    state.bannerList = bannerList
   }
 }

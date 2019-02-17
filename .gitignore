@@ -3,3 +3,4 @@ public
 server-build
 .vscode
 dist
+.idea/

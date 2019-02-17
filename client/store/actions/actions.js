@@ -58,5 +58,18 @@ export default {
         commit('endLoading')
         handleError(err)
       })
+  },
+  // 首页
+  getBannerList ({ commit }) {
+    commit('startLoading')
+    return model.getBannerList()
+      .then(data => {
+        commit('endLoading')
+        commit('bannerList', data)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
   }
 }

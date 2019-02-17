@@ -52,6 +52,14 @@ export default {
       },
       headers: getHeaders()
     }))
+  },
+  // 首页api
+  getBannerList () {
+    return handleRequest(request({
+      url: '/banner/info/list',
+      method: 'get',
+      headers: getHeaders()
+    }))
   }
 
 }
