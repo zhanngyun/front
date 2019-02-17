@@ -15,7 +15,6 @@ const handleError = (err) => {
 export default {
   getNoticeById ({ dispatch, commit }, id) {
     commit('startLoading')
-    console.log('getNoticeByIdStart', id)
     return model.getNoticeById(id)
       .then(data => {
         commit('endLoading')
@@ -28,7 +27,6 @@ export default {
   },
   updateClickNum ({ commit }, id) {
     commit('startLoading')
-    console.log('updateClickNumStart', id)
     return model.updateClickNum(id)
       .then(data => {
         commit('endLoading')
@@ -40,7 +38,6 @@ export default {
   },
   getPreAndAft ({ commit }, id) {
     commit('startLoading')
-    console.log('getPreAndAftStart', id)
     return model.getPreAndAft(id)
       .then(data => {
         commit('endLoading')
@@ -114,6 +111,24 @@ export default {
       .then(data => {
         commit('endLoading')
         commit('doctorList', data)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  SectionInfoByType ({ commit }, sectionType) {
+    commit('startLoading')
+    return model.SectionInfoByType(sectionType)
+      .then(data => {
+        commit('endLoading')
+        if (sectionType === 1) {
+          commit('selectList1', data)
+        } else if (sectionType === 2) {
+          commit('selectList2', data)
+        } else {
+          commit('selectList3', data)
+        }
       })
       .catch(err => {
         commit('endLoading')

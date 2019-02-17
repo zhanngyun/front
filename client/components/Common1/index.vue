@@ -48,9 +48,6 @@ export default {
         return 24
       }
     }
-  },
-  created () {
-    console.log('noticeList', this.records)
   }
 }
 </script>

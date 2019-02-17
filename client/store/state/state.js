@@ -7,5 +7,8 @@ export default {
   noticeList: {},
   newsList: {},
   healthyList: {},
-  doctorList: {}
+  doctorList: {},
+  selectList1: [],
+  selectList2: [],
+  selectList3: []
 }

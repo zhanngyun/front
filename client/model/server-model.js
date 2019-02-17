@@ -104,6 +104,16 @@ export default {
       },
       headers: getHeaders()
     }))
+  },
+  SectionInfoByType (sectionType) {
+    return handleRequest(request({
+      url: '/section/info/getSelectionByType',
+      method: 'get',
+      params: {
+        sectionType
+      },
+      headers: getHeaders()
+    }))
   }
 
 }

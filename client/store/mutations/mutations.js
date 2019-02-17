@@ -28,5 +28,14 @@ export default {
   },
   doctorList (state, doctorList) {
     state.doctorList = doctorList
+  },
+  selectList1 (state, selectList1) {
+    state.selectList1 = selectList1
+  },
+  selectList2 (state, selectList2) {
+    state.selectList2 = selectList2
+  },
+  selectList3 (state, selectList3) {
+    state.selectList3 = selectList3
   }
 }
