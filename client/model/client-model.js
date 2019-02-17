@@ -18,9 +18,13 @@ const handleRequest = (request) => {
       resolve(data.data)
     }).catch(err => {
       const resp = err.response
-      console.log('---------------', resp)
-      if (resp.status === 401) {
-        reject(createError(401, 'need auth'))
+      if (resp.status === 411) {
+        reject(createError(411, 'need perfect'))
+      } else if (resp.status === 500) {
+        reject(createError(500, 'need auth'))
+      } else {
+        console.log('err', err)
+        reject(createError(400, resp.message))
       }
     })
   })
@@ -198,6 +202,49 @@ export default {
         current: 1,
         size: 5,
         sectionId: id
+      },
+      headers: getHeaders()
+    }))
+  },
+  // 发送短信
+  sendMsg (mobile) {
+    return handleRequest(request({
+      url: '/msgCode/send',
+      method: 'post',
+      data: {
+        mobile
+      },
+      headers: getHeaders()
+    }))
+  },
+  // 登录
+  login (mobile, authCode) {
+    return handleRequest(request({
+      url: '/user/info/login',
+      method: 'post',
+      data: {
+        mobile,
+        authCode
+      },
+      headers: getHeaders()
+    }))
+  },
+  // 完善信息
+  perfect (data) {
+    return handleRequest(request({
+      url: '/user/info/perfect',
+      method: 'post',
+      data,
+      headers: getHeaders()
+    }))
+  },
+  // 获取用户信息
+  getInfo (mobile) {
+    return handleRequest(request({
+      url: '/user/info/getInfo',
+      method: 'get',
+      params: {
+        mobile: mobile
       },
       headers: getHeaders()
     }))

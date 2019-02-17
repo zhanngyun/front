@@ -1,14 +1,19 @@
-// import model from '../../model/client-model'
 import model from 'model'
 import bus from '../../util/bus'
+import {setToken, removeToken, setMobile, getMobile} from '../../util/auth'
+import notify from '../../components/notification/function'
 
 const handleError = (err) => {
   // handle error
-  if (err.code === 401) {
-    // notify({
-    //   content: '你得先登录啊！'
-    // })
+  if (err.code === 411) {
+    bus.$emit('perfect')
+  } else if (err.code === 500) {
     bus.$emit('auth')
+  } else {
+    notify({
+      content: '输入有误！'
+    })
+    throw err
   }
 }
 
@@ -296,5 +301,74 @@ export default {
         commit('endLoading')
         handleError(err)
       })
+  },
+  // 发送短信
+  sendMsg ({ commit }, mobile) {
+    commit('startLoading')
+    return model.sendMsg(mobile)
+      .then(data => {
+        commit('endLoading')
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  // 登录
+  Login ({ dispatch, commit }, userInfo) {
+    commit('startLoading')
+    const mobile = userInfo.mobile.trim()
+    commit('SET_MOBILE', mobile)
+    setMobile(mobile)
+    console.log('我来登录啦...', userInfo)
+    return model.login(mobile, userInfo.verificationCode)
+      .then(data => {
+        console.log('登录返回信息...', data)
+        commit('endLoading')
+        setToken(data)
+        dispatch('GetInfo', mobile)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  Perfect ({ dispatch, commit }, userInfo) {
+    commit('startLoading')
+    console.log('我来完善信息啦...', userInfo)
+    userInfo.mobile = getMobile()
+    return model.perfect(userInfo)
+      .then(data => {
+        commit('endLoading')
+        console.log('完善信息返回信息...', data)
+        setToken(data)
+        dispatch('GetInfo', userInfo.mobile)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  GetInfo ({ commit }, mobile) {
+    commit('startLoading')
+    console.log('我来获取信息啦..', mobile)
+    return model.getInfo(mobile)
+      .then(data => {
+        commit('endLoading')
+        commit('userInfo', data)
+        console.log('获取到的个人信息..', data)
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  LogOut ({ commit }) {
+    commit('startLoading')
+    return new Promise(resolve => {
+      commit('userInfo', '')
+      removeToken()
+      resolve()
+    })
   }
 }

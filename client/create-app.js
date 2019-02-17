@@ -14,7 +14,7 @@ import './styles/index.scss' // global css
 
 import common from './util/commonFun.js' // 公共方法
 import VueLazyLoad from 'vue-lazyload' // 图片懒加载
-
+import Notification from './components/notification'
 if (typeof window !== 'undefined') {
   require('element-ui/lib/theme-chalk/index.css')
   require('swiper/dist/css/swiper.css')
@@ -25,6 +25,7 @@ Vue.use(VueLazyLoad, {
   error: 'https://www.hnsqmkyy.com/img/error.jpg',
   loading: 'https://www.hnsqmkyy.com/img/loading.gif'
 })
+Vue.use(Notification)
 Vue.prototype.common = common
 Vue.use(VueRouter)
 Vue.use(Vuex)

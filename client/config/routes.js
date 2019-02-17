@@ -67,5 +67,17 @@ export default [
         component: () => import('../views/sectionInfo/index.vue')
       }
     ]
+  },
+  {
+    path: '/login',
+    hidden: true,
+    meta: { title: '用户登录', icon: 'form' },
+    component: () => import('../views/login/login.vue')
+  },
+  {
+    path: '/register',
+    hidden: true,
+    meta: { title: '完善信息', icon: 'form' },
+    component: () => import('../views/login/register.vue')
   }
 ]

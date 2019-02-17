@@ -70,5 +70,11 @@ export default {
   },
   sectionDoctors (state, sectionDoctors) {
     state.sectionDoctors = sectionDoctors
+  },
+  SET_MOBILE (state, mobile) {
+    state.mobile = mobile
+  },
+  userInfo (state, userInfo) {
+    state.userInfo = userInfo
   }
 }

@@ -1,3 +1,4 @@
+import { getMobile } from '../../util/auth'
 export default {
   notice: '',
   noticePre: {},
@@ -21,5 +22,7 @@ export default {
   envAllList: [],
   doctorAll: [],
   sectionInfo: '',
-  sectionDoctors: []
+  sectionDoctors: [],
+  userInfo: '',
+  mobile: getMobile()
 }

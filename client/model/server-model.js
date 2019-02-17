@@ -18,9 +18,10 @@ const handleRequest = (request) => {
       resolve(data.data)
     }).catch(err => {
       const resp = err.response
-      console.log('---------------', resp)
-      if (resp.status === 401) {
-        reject(createError(401, 'need auth'))
+      if (resp.status === 411) {
+        reject(createError(411, 'need perfect'))
+      } else {
+        reject(createError(500, 'need auth'))
       }
     })
   })
@@ -200,6 +201,17 @@ export default {
         current: 1,
         size: 5,
         sectionId: id
+      },
+      headers: getHeaders()
+    }))
+  },
+  // 发送短信
+  sendMsg (mobile) {
+    return handleRequest(request({
+      url: '/msgCode/send',
+      method: 'post',
+      data: {
+        mobile
       },
       headers: getHeaders()
     }))
