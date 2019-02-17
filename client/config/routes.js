@@ -71,6 +71,18 @@ export default [
         hidden: true,
         meta: { title: '医生详情', icon: 'form' },
         component: () => import('../views/doctorInfo/index.vue')
+      },
+      {
+        path: '/mobileMe',
+        hidden: true,
+        meta: { title: '我的', icon: 'form' },
+        component: () => import('../views/mobileMe/index.vue')
+      },
+      {
+        path: '/order',
+        hidden: true,
+        meta: { title: '预约记录', icon: 'form' },
+        component: () => import('../views/order/index.vue')
       }
     ]
   },

@@ -282,11 +282,30 @@ export default {
       headers: getHeaders()
     }))
   },
+  getOrderListByUserId (params) {
+    return handleRequest(request({
+      url: '/order/info/getListByCondition',
+      method: 'get',
+      params,
+      headers: getHeaders()
+    }))
+  },
   ordering (data) {
     return handleRequest(request({
       url: '/order/info/ordering',
       method: 'post',
       data,
+      headers: getHeaders()
+    }))
+  },
+  cancelOrdering (orderId, userId) {
+    return handleRequest(request({
+      url: '/order/info/cancelOrdering',
+      method: 'post',
+      data: {
+        orderId,
+        userId
+      },
       headers: getHeaders()
     }))
   }

@@ -416,5 +416,29 @@ export default {
         commit('endLoading')
         handleError(err)
       })
+  },
+  getOrderListByUserId ({ commit }, data) {
+    commit('startLoading')
+    return model.getOrderListByUserId(data)
+      .then(data => {
+        commit('endLoading')
+        return data
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
+  },
+  cancelOrdering ({ commit }, {orderId, userId}) {
+    commit('startLoading')
+    return model.cancelOrdering(orderId, userId)
+      .then(data => {
+        commit('endLoading')
+        return data
+      })
+      .catch(err => {
+        commit('endLoading')
+        handleError(err)
+      })
   }
 }

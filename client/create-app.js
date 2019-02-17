@@ -15,6 +15,7 @@ import './styles/index.scss' // global css
 import common from './util/commonFun.js' // 公共方法
 import VueLazyLoad from 'vue-lazyload' // 图片懒加载
 import Notification from './components/notification'
+import './icons' // icon
 if (typeof window !== 'undefined') {
   require('element-ui/lib/theme-chalk/index.css')
   require('swiper/dist/css/swiper.css')
