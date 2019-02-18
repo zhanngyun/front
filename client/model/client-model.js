@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { createError } from './util'
+import CommonFun from '../util/commonFun'
 
 const request = axios.create({
   baseURL: 'https://www.hnsqmkyy.com/api'
@@ -31,8 +32,7 @@ const handleRequest = (request) => {
 }
 const getHeaders = () => {
   return {
-    // 'Authorization': 'eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFMyNTYifQ.eyJtb2JpbGUiOiIxODg4ODg4ODg4OCJ9.lZ9vi8sthuGwSCBAqhMuKVoP26UjQd74uHz9RWKepPI',
-    'Authorization': 'eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFMyNTYifQ.eyJtb2JpbGUiOiIxNzYyMTY2OTQ1NiIsInVzZXJOYW1lIjoi5byg5LqRIiwidXNlcklkIjoiMjUiLCJleHAiOjE1NTA1MDg5NDMsIm5iZiI6MTU1MDQyMjU0M30.Moi5u9gqwGc7fTed7tkVD0CrxOWhkqR0bX7JF2E2BwE',
+    'Authorization': CommonFun.getToken(),
     'AuthorizationType': '2'
   }
 }

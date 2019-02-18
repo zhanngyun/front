@@ -6,27 +6,27 @@
       <navbar></navbar>
       <app-main></app-main>
       <footerbar></footerbar>
-      <!--<back-to-top transitionName="fade" :customStyle="myBackToTopStyle" :visibilityHeight="300" :backPosition="50"></back-to-top>-->
+      <back-to-top transitionName="fade" :customStyle="myBackToTopStyle" :visibilityHeight="300" :backPosition="50"></back-to-top>
     </div>
     <!-- 侧边栏 -->
-    <!--<div class="broadside">-->
-      <!--<router-link to="/mobileMe">-->
-        <!--<div class="top">-->
-          <!--我的<br/>空间-->
-        <!--</div>-->
-      <!--</router-link>-->
-      <!--<router-link to="/order">-->
-        <!--<div class="buttom">-->
-          <!--预约<br/>记录-->
-        <!--</div>-->
-      <!--</router-link>-->
-    <!--</div>-->
+    <div class="broadside">
+      <router-link to="/mobileMe">
+        <div class="top">
+          我的<br/>空间
+        </div>
+      </router-link>
+      <router-link to="/order">
+        <div class="buttom">
+          预约<br/>记录
+        </div>
+      </router-link>
+    </div>
   </div>
 </template>
 
 <script>
 import { Navbar, AppMain, Footerbar } from './components'
-// import BackToTop from '../../components/BackToTop/'
+import BackToTop from '../components/BackToTop/index.vue'
 import ResizeMixin from './mixin/ResizeHandler'
 
 export default {
@@ -34,7 +34,8 @@ export default {
   components: {
     Navbar,
     AppMain,
-    Footerbar
+    Footerbar,
+    BackToTop
   },
   data () {
     return {

@@ -7,7 +7,7 @@
       <el-col :span="16" class="name">
         <div class="trueName">
           <span class="user">{{user.mobile.substring(0,3) + '****' + user.mobile.substring(7,11)}}</span>
-          <span class="user">{{user.trueName}}</span>
+          <span class="user">{{user.userName}}</span>
         </div>
       </el-col>
     </div>
@@ -80,18 +80,21 @@ export default {
   },
   created () {
     const that = this
-    if (that.$store.state.userInfo === '' || typeof (that.$store.state.userInfo) === 'undefined') {
-      that.$message({
-        message: '请先登录在进行操作',
-        type: 'warning',
-        duration: 2 * 1000,
-        onClose () {
-          const href = window.location.href
-          window.location.replace(href.substring(0, href.indexOf('/')) + '/login')
-        }
-      })
-    } else {
-      this.user = this.$store.state.userInfo
+    if (typeof window !== 'undefined') {
+      this.common.getUserInfo(this)
+      if (that.$store.state.userInfo === '' || typeof (that.$store.state.userInfo) === 'undefined') {
+        that.$message({
+          message: '请先登录在进行操作',
+          type: 'warning',
+          duration: 2 * 1000,
+          onClose () {
+            const href = window.location.href
+            window.location.replace(href.substring(0, href.indexOf('/')) + '/login')
+          }
+        })
+      } else {
+        this.user = this.$store.state.userInfo
+      }
     }
   },
   methods: {

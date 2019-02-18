@@ -4,6 +4,8 @@ const TokenKey = 'Front-Token'
 
 const mobileKey = 'Front-Mobile'
 
+const userInfoKey = 'Front-UserInfo'
+
 export function getToken () {
   return Cookies.get(TokenKey)
 }
@@ -22,4 +24,8 @@ export function setMobile (mobile) {
 
 export function getMobile () {
   return Cookies.get(mobileKey)
+}
+
+export function setUserInfo (userInfo) {
+  return Cookies.set(userInfoKey, userInfo)
 }

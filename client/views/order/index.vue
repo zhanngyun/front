@@ -39,7 +39,7 @@
         prop="doctorName"
         label="医生" align="center">
         <template slot-scope="scope">
-          <router-link :to="'/doctor/info/' + scope.row.doctorId">
+          <router-link :to="'/doctorInfo/' + scope.row.doctorId">
             <el-button type="primary">{{scope.row.doctorName}}</el-button>
           </router-link>
         </template>
@@ -141,19 +141,22 @@
     },
     created () {
       const that = this
-      if (that.$store.state.userInfo === '' || typeof (that.$store.state.userInfo) === 'undefined') {
-        that.$message({
-          message: '请先登录在进行操作',
-          type: 'warning',
-          duration: 2 * 1000,
-          onClose () {
-            const href = window.location.href
-            window.location.replace(href.substring(0, href.indexOf('/')) + '/login')
-          }
-        })
-      } else {
-        this.listQuery.userId = that.$store.state.userInfo.id
-        this.getList()
+      if (typeof window !== 'undefined') {
+        this.common.getUserInfo(this)
+        if (that.$store.state.userInfo === '' || typeof (that.$store.state.userInfo) === 'undefined') {
+          that.$message({
+            message: '请先登录在进行操作',
+            type: 'warning',
+            duration: 2 * 1000,
+            onClose () {
+              const href = window.location.href
+              window.location.replace(href.substring(0, href.indexOf('/')) + '/login')
+            }
+          })
+        } else {
+          this.listQuery.userId = that.$store.state.userInfo.id
+          this.getList()
+        }
       }
     }
   }

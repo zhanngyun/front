@@ -1,6 +1,6 @@
 import model from 'model'
 import bus from '../../util/bus'
-import {setToken, removeToken, setMobile, getMobile} from '../../util/auth'
+import {setToken, removeToken, setMobile, getMobile, setUserInfo} from '../../util/auth'
 import notify from '../../components/notification/function'
 
 const handleError = (err) => {
@@ -352,6 +352,7 @@ export default {
       .then(data => {
         commit('endLoading')
         commit('userInfo', data)
+        setUserInfo(data)
         console.log('获取到的个人信息..', data)
       })
       .catch(err => {
