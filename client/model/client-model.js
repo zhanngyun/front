@@ -24,7 +24,6 @@ const handleRequest = (request) => {
       } else if (resp.status === 500) {
         reject(createError(500, 'need auth'))
       } else {
-        console.log('err', err)
         reject(createError(400, resp.message))
       }
     })

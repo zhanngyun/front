@@ -101,7 +101,6 @@ export default {
     await store.dispatch('getSectionsAndDoctors')
   },
   created () {
-    console.log('查看科室是否执行该段代码===', this.data, this.$store.state.doctorAll.length === 0)
     if (this.$store.state.doctorAll.length === 0) {
       const _that = this
       _that.$store.dispatch('getSectionsAndDoctors').then(data => {

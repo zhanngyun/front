@@ -102,11 +102,13 @@ export default {
       this.summary = this.records[parseInt(e.srcElement.id)].sectionSummary
     }
   },
-  created () {
-    this.records = this.type1
-    this.imgSrc = this.records[0].sectionImg
-    this.title = this.records[0].sectionName
-    this.summary = this.records[0].sectionSummary
+  mounted () {
+    if (typeof window !== 'undefined') {
+      this.records = this.type1
+      this.imgSrc = this.records[0].sectionImg
+      this.title = this.records[0].sectionName
+      this.summary = this.records[0].sectionSummary
+    }
   }
 }
 </script>

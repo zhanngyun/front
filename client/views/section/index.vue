@@ -87,7 +87,6 @@ export default {
   },
   created () {
     const _that = this
-    console.log('查看科室是否执行该段代码===', this.sections1, this.sections1.length === 0)
     if (this.sections1.length === 0) {
       this.$store.dispatch('SectionInfoByType', 1).then(data => {
         _that.sections1 = data

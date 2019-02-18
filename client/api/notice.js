@@ -57,7 +57,6 @@ export function getPreAndAft (noticeId) {
  * @param newsId
  */
 export function updateClickNum (data) {
-  console.log('增加点击率... start..')
   return request({
     url: '/notice/info/updateClickNum',
     method: 'post',

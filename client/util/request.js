@@ -11,7 +11,6 @@ const service = axios.create({
 
 // request拦截器
 service.interceptors.request.use(config => {
-  console.log('request.... start...')
   if (config.method === 'post') {
     if (config.headers && config.headers['Content-Type'] === 'application/json') {
       config.params = {

@@ -337,7 +337,6 @@ export default {
     return model.perfect(userInfo)
       .then(data => {
         commit('endLoading')
-        console.log('token=========', data)
         setToken(data)
         dispatch('GetInfo', userInfo.mobile)
       })
@@ -353,7 +352,6 @@ export default {
         commit('endLoading')
         commit('userInfo', data)
         setUserInfo(data)
-        console.log('获取到的个人信息..', data)
       })
       .catch(err => {
         commit('endLoading')
