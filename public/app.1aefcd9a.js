@@ -618,7 +618,9 @@ function setUserInfo(userInfo) {
   },
   getUserInfo: function (that) {
     const userInfo = __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.get('Front-UserInfo');
-    that.$store.commit('userInfo', JSON.parse(userInfo));
+    if (userInfo !== '' && typeof userInfo !== 'undefined') {
+      that.$store.commit('userInfo', JSON.parse(userInfo));
+    }
     return userInfo;
   },
   getToken: function () {

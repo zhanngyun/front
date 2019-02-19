@@ -5,7 +5,9 @@ export default{
   },
   getUserInfo: function (that) {
     const userInfo = Cookies.get('Front-UserInfo')
-    that.$store.commit('userInfo', JSON.parse(userInfo))
+    if (userInfo !== '' && (typeof userInfo) !== 'undefined') {
+      that.$store.commit('userInfo', JSON.parse(userInfo))
+    }
     return userInfo
   },
   getToken: function () {

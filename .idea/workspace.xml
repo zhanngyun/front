@@ -3,61 +3,148 @@
   <component name="ChangeListManager">
     <list default="true" id="6b9c8c62-07ed-407c-978d-856043f289f9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/client/config/routes.js" afterPath="$PROJECT_DIR$/client/config/routes.js" />
-      <change beforePath="$PROJECT_DIR$/public/0.35255ee3.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/1.73149ad2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/10.a63d30fd.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/11.1b1bc590.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/12.e58fc3ec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/13.9d2ead72.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/14.f6c42275.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/15.3a92cfe9.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/2.6a5ccba3.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/3.6a4e2d3f.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/4.297c68d2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/5.88bcb5c9.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/6.b1e33e34.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/7.cad09456.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/8.e5b447c1.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/9.82f85417.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/app.d4721e9b.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/runtime.53ba93a3.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/vue-ssr-client-manifest.json" afterPath="$PROJECT_DIR$/public/vue-ssr-client-manifest.json" />
-      <change beforePath="$PROJECT_DIR$/server-build/0.server-entry.js" afterPath="$PROJECT_DIR$/server-build/0.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/0.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/0.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/1.server-entry.js" afterPath="$PROJECT_DIR$/server-build/1.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/1.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/1.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/10.server-entry.js" afterPath="$PROJECT_DIR$/server-build/10.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/10.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/10.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/11.server-entry.js" afterPath="$PROJECT_DIR$/server-build/11.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/11.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/11.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/12.server-entry.js" afterPath="$PROJECT_DIR$/server-build/12.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/12.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/12.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/13.server-entry.js" afterPath="$PROJECT_DIR$/server-build/13.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/13.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/13.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/14.server-entry.js" afterPath="$PROJECT_DIR$/server-build/14.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/14.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/14.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/15.server-entry.js" afterPath="$PROJECT_DIR$/server-build/15.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/15.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/15.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/2.server-entry.js" afterPath="$PROJECT_DIR$/server-build/2.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/2.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/2.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/3.server-entry.js" afterPath="$PROJECT_DIR$/server-build/3.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/3.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/3.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/4.server-entry.js" afterPath="$PROJECT_DIR$/server-build/4.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/4.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/4.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/5.server-entry.js" afterPath="$PROJECT_DIR$/server-build/5.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/5.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/5.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/6.server-entry.js" afterPath="$PROJECT_DIR$/server-build/6.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/6.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/6.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/7.server-entry.js" afterPath="$PROJECT_DIR$/server-build/7.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/7.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/7.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/8.server-entry.js" afterPath="$PROJECT_DIR$/server-build/8.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/8.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/8.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/9.server-entry.js" afterPath="$PROJECT_DIR$/server-build/9.server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/9.server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/9.server-entry.js.map" />
-      <change beforePath="$PROJECT_DIR$/server-build/server-entry.js" afterPath="$PROJECT_DIR$/server-build/server-entry.js" />
-      <change beforePath="$PROJECT_DIR$/server-build/server-entry.js.map" afterPath="$PROJECT_DIR$/server-build/server-entry.js.map" />
+      <change beforePath="$PROJECT_DIR$/client/util/commonFun.js" afterPath="$PROJECT_DIR$/client/util/commonFun.js" />
+      <change beforePath="$PROJECT_DIR$/public/0.2f76cab8.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/1.8b1a7250.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/10.a3528bcd.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/11.1d32acfa.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/12.84496e35.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/13.7edc2359.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/14.59b0a5c7.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/15.afe86915.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/16.0bfcbeb8.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/2.0f4a6606.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/3.9f41af97.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/4.1ef50db1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/5.573f18e4.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/6.b3307664.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/7.693fcf0e.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/8.5a2f098d.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/9.740cd6d5.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/app.df779772.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/avator/index.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/address.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/address1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/book.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/book1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/foot.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/healthy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/healthy1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/ind_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/line.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/next1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/prev1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/time.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/icon/time1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/assets/index_images/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/404.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/bug.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/clipboard.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/dashboard.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/edit.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/example.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/eye.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/form.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/icon.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/international.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/language.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/list.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/lock.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/password.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/people.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/peoples.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/qq.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/shoppingCard.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/star.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/tab.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/table.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/theme.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/tree.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/wechat.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/resources/client/icons/svg/zip.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/runtime.ed33617e.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/styles.e6703714.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/vendor.a15493c9.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/vue-ssr-client-manifest.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/0.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/0.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/1.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/1.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/10.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/10.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/11.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/11.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/12.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/12.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/13.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/13.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/14.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/14.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/15.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/15.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/16.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/16.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/2.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/2.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/3.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/3.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/4.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/4.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/5.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/5.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/6.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/6.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/7.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/7.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/8.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/8.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/9.server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/9.server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/avator/index.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/address.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/address1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/book.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/book1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/foot.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/healthy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/healthy1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/ind_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/line.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/next1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/prev1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/time.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/icon/time1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/assets/index_images/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/404.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/bug.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/clipboard.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/dashboard.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/edit.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/example.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/eye.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/form.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/icon.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/international.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/language.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/list.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/lock.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/password.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/people.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/peoples.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/qq.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/shoppingCard.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/star.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/tab.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/table.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/theme.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/tree.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/wechat.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/resources/client/icons/svg/zip.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/server-entry.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/server-entry.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/styles.affc3442.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server-build/styles.affc3442.css.map" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -111,11 +198,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Navbar.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Navbar.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/layout/components/Navbar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="15" column="68" lean-forward="true" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+            <state relative-caret-position="285">
+              <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commonFun.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/util/commonFun.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -149,16 +246,6 @@
               <folding>
                 <element signature="e#1131#1187#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack.config.base.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/webpack.config.base.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="82" column="24" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -247,7 +334,6 @@
         <option value="$PROJECT_DIR$/client/icons/index.js" />
         <option value="$PROJECT_DIR$/client/util/auth.js" />
         <option value="$PROJECT_DIR$/client/views/mobileMe/index.vue" />
-        <option value="$PROJECT_DIR$/client/util/commonFun.js" />
         <option value="$PROJECT_DIR$/client/views/order/index.vue" />
         <option value="$PROJECT_DIR$/client/layout/Layout.vue" />
         <option value="$PROJECT_DIR$/client/components/BackToTop/index.vue" />
@@ -269,6 +355,7 @@
         <option value="$PROJECT_DIR$/client/views/intro/index.vue" />
         <option value="$PROJECT_DIR$/client/config/routes.js" />
         <option value="$PROJECT_DIR$/client/views/index/index.vue" />
+        <option value="$PROJECT_DIR$/client/util/commonFun.js" />
       </list>
     </option>
   </component>
@@ -321,20 +408,7 @@
               <item name="front" type="b2602c69:ProjectViewProjectNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="mobileMe" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="front" type="b2602c69:ProjectViewProjectNode" />
@@ -393,18 +467,17 @@
       <workItem from="1550330779523" duration="4805000" />
       <workItem from="1550380272989" duration="27419000" />
       <workItem from="1550409772209" duration="16248000" />
-      <workItem from="1550457840427" duration="26021000" />
+      <workItem from="1550457840427" duration="27288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74493000" />
+    <option name="totallyTimeSpent" value="75760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24107143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23958333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17845118" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
@@ -413,7 +486,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07070707" sideWeight="0.49702382" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27441078" sideWeight="0.49702382" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -541,14 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/util/commonFun.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -839,8 +904,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/layout/components/Navbar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="68" lean-forward="true" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+        <state relative-caret-position="285">
+          <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/util/commonFun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding />
         </state>
       </provider>
