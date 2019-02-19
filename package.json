@@ -1,5 +1,5 @@
 {
-  "name": "vue-ssr-tech",
+  "name": "hnsqmkyy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
     "start": "cross-env NODE_ENV=production node server/server.js"
   },
-  "author": "",
+  "author": "yzhang",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.17.1",
