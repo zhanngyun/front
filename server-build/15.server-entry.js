@@ -1,17 +1,17 @@
 exports.ids = [15];
 exports.modules = {
 
-/***/ 179:
+/***/ 184:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(225);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_afe1dc30_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6df547af_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(277);
 function injectStyle (ssrContext) {
 var i
-;(i=__webpack_require__(258),i.__inject__&&i.__inject__(ssrContext),i)
+;(i=__webpack_require__(275),i.__inject__&&i.__inject__(ssrContext),i)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -24,12 +24,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-afe1dc30"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
-var __vue_module_identifier__ = "45da8b49"
+var __vue_module_identifier__ = "030d8c66"
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_afe1dc30_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6df547af_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -41,7 +41,7 @@ var Component = normalizeComponent(
 
 /***/ }),
 
-/***/ 219:
+/***/ 225:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76,108 +76,88 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   metaInfo() {
     return {
-      title: '医生列表| 河南商丘市民康医院官网',
+      title: '健康咨询列表| 河南商丘市民康医院官网',
       meta: [{
         name: 'keywords',
-        content: '商丘民康医院医生列表'
+        content: '河南商丘民康医院官网健康咨询列表'
       }, {
         name: 'description',
         content: this.pageDescription
       }]
     };
   },
+  name: 'dashboard',
   data() {
     return {
-      form: {
-        name: ''
-      },
-      data: this.$store.state.doctorAll,
-      pageDescription: '商丘民康医院相关的医生列表信息'
+      list: [],
+      total: 0,
+      currentPage: 1,
+      pageSize: 10,
+      pageDescription: '河南商丘市民康医院是二级甲等医院,是一家综合医院,商丘市各县区医疗救助保险定点医疗机构。'
     };
+  },
+  computed: {
+    layout: function () {
+      if (this.$store.state.app.device !== 'mobile') {
+        return 'total, sizes, prev, pager, next, jumper';
+      } else {
+        return 'sizes, prev, pager, next';
+      }
+    }
   },
   asyncData({ route, router, store }) {
     return _asyncToGenerator(function* () {
-      yield store.dispatch('getSectionsAndDoctors');
+      yield store.dispatch('getHealthyList', { current: 1, size: 10 });
     })();
   },
   created() {
-    if (this.$store.state.doctorAll.length === 0) {
+    if (typeof window !== 'undefined') {
+      this.getHealthyPage(1, 10);
+    }
+  },
+  methods: {
+    getHealthyPage($v1, $v2) {
       const _that = this;
-      _that.$store.dispatch('getSectionsAndDoctors').then(data => {
-        _that.data = data;
+      this.$store.dispatch('getHealthyList', { current: $v1, size: $v2 }).then(data => {
+        _that.list = _that.$store.state.healthyList.records;
+        _that.total = _that.$store.state.healthyList.total;
       });
+    },
+    handleSizeChange(val) {
+      this.pageSize = val;
+      this.getHealthyPage(1, val);
+    },
+    handleCurrentChange(val) {
+      this.currentPage = val;
+      this.getHealthyPage(this.currentPage, this.pageSize);
     }
   }
 });
 
 /***/ }),
 
-/***/ 258:
+/***/ 275:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(259);
+var content = __webpack_require__(276);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(177)
 module.exports.__inject__ = function (context) {
-  add("7d8d9ffd", content, true, context)
+  add("47280f94", content, true, context)
 };
 
 /***/ }),
 
-/***/ 259:
+/***/ 276:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(undefined);
@@ -185,18 +165,18 @@ exports = module.exports = __webpack_require__(18)(undefined);
 
 
 // module
-exports.push([module.i, ".block[data-v-afe1dc30]{width:100%;position:relative}.block .title[data-v-afe1dc30]{height:40px;text-align:center;font-size:24px;color:#333}.block .hook[data-v-afe1dc30]{font-size:0;float:left;width:100%;margin:10px auto;text-align:center}.block .hook .a1[data-v-afe1dc30]{background-color:#528eb5}.block .hook .a2[data-v-afe1dc30]{background-color:#55a5aa}.block .hook .a3[data-v-afe1dc30]{background-color:#e5ca8f}.block .hook a[data-v-afe1dc30]{display:inline-block;width:148px;height:40px;line-height:40px;text-align:center;border-radius:5px;font-size:16px;color:#fff;margin-right:10px}.block .p1[data-v-afe1dc30]{margin-top:20px}.block .p1 .block[data-v-afe1dc30]{width:100%;margin:0 auto;position:relative}.block .p1 .block .caption[data-v-afe1dc30]{font-size:20px;color:#474747;line-height:30px}.block .p1 .block .box[data-v-afe1dc30]{padding-top:20px}.block .p1 .block .box .item[data-v-afe1dc30]{border:1px solid #ccc;border-radius:5px;width:292px;height:125px;float:left;margin-left:15px;margin-bottom:15px;-webkit-transition:all .2s ease;transition:all .2s ease}.block .p1 .block .box .item .inner[data-v-afe1dc30]{display:block;padding:18px 20px}.block .p1 .block .box .item .inner .h2[data-v-afe1dc30]{font-size:18px;color:#528eb5;border-bottom:1px solid #ddd;padding-bottom:18px;margin:0}.block .p1 .block .box .item .inner .inner-box[data-v-afe1dc30]{padding:8px 0}.block .p1 .block .box .item .inner .inner-box a[data-v-afe1dc30]{display:block;width:33.3333%;float:left;font-size:14px;color:#474747;padding:6px 0}.block .p1 .block .box .item[data-v-afe1dc30]:hover{background-color:#528eb5}.block .p1 .block .box .item:hover .h2[data-v-afe1dc30],.block .p1 .block .box .item:hover .inner-box a[data-v-afe1dc30]{color:#fff}.mobile .hook a[data-v-afe1dc30]{width:100px;font-size:.875rem}", ""]);
+exports.push([module.i, ".main{width:100%;margin-bottom:20px}.main,.main .title{text-align:center}.main .title span{display:block;height:80px;line-height:80px;font-size:24px;border-bottom:1px solid #015128}.main .list{width:80%;margin:0 auto}.main .list ul{margin-top:20px}.main .list ul li{list-style:circle outside none;height:40px;line-height:40px;font-size:14px;text-align:left;position:relative}.main .list ul li a{display:block;height:40px;line-height:40px;width:300px;float:left}.main .list ul li a:hover{color:#015128}.main .list ul li span{float:right;padding-right:30px}.main .list ul li .ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}.main .el-pagination{width:80%;margin:0 auto}.mobile .list ul li a{width:100px}.mobile .el-pagination{width:100%}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 260:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-row',[_c('el-col',[_c('div',{staticClass:"block"},[_c('div',{staticClass:"title"},[_vm._v("医生介绍")]),_vm._v(" "),_c('div',{staticClass:"hook"},[_c('a',{staticClass:"a1",attrs:{"href":"#m1"}},[_vm._v("非手术科室")]),_vm._v(" "),_c('a',{staticClass:"a2",attrs:{"href":"#m2"}},[_vm._v("手术科室")]),_vm._v(" "),_c('a',{staticClass:"a3",attrs:{"href":"#m3"}},[_vm._v("诊断相关科室")])]),_vm._v(" "),_c('div',{staticClass:"clearfix"}),_vm._v(" "),_c('div',{staticClass:"p1",attrs:{"id":"m1"}},[_c('div',{staticClass:"block"},[_c('div',{staticClass:"caption"},[_vm._v("非手术科室")]),_vm._v(" "),_c('div',{staticClass:"box clearfix"},_vm._l((_vm.data[0].sectionInfoList),function(item){return _c('div',{key:item.id,staticClass:"item"},[_c('div',{staticClass:"inner"},[_c('div',{staticClass:"h2"},[_c('router-link',{attrs:{"to":{path:'sectionInfo', query: {id:item.id}}}},[_vm._v(_vm._s(item.sectionName))])],1),_vm._v(" "),_c('div',{staticClass:"inner-box clearfix"},_vm._l((item.doctorList),function(doctor){return _c('span',{key:doctor.id},[_c('router-link',{attrs:{"to":{path:'doctorInfo/' + doctor.id}}},[_vm._v(_vm._s(doctor.doctorName))])],1)}))])])}))])]),_vm._v(" "),_c('div',{staticClass:"p1",attrs:{"id":"m2"}},[_c('div',{staticClass:"block"},[_c('div',{staticClass:"caption"},[_vm._v("手术科室")]),_vm._v(" "),_c('div',{staticClass:"box clearfix"},_vm._l((_vm.data[1].sectionInfoList),function(item){return _c('div',{key:item.id,staticClass:"item"},[_c('div',{staticClass:"inner"},[_c('div',{staticClass:"h2"},[_c('router-link',{attrs:{"to":{path:'sectionInfo', query: {id:item.id}}}},[_vm._v(_vm._s(item.sectionName))])],1),_vm._v(" "),_c('div',{staticClass:"inner-box clearfix"},_vm._l((item.doctorList),function(doctor){return _c('span',{key:doctor.id},[_c('router-link',{attrs:{"to":{path:'doctorInfo/' + doctor.id}}},[_vm._v(_vm._s(doctor.doctorName))])],1)}))])])}))])]),_vm._v(" "),_c('div',{staticClass:"p1",attrs:{"id":"m3"}},[_c('div',{staticClass:"block"},[_c('div',{staticClass:"caption"},[_vm._v("诊断相关科室")]),_vm._v(" "),_c('div',{staticClass:"box clearfix"},_vm._l((_vm.data[2].sectionInfoList),function(item){return _c('div',{key:item.id,staticClass:"item"},[_c('div',{staticClass:"inner"},[_c('div',{staticClass:"h2"},[_c('router-link',{attrs:{"to":{path:'sectionInfo', query: {id:item.id}}}},[_vm._v(_vm._s(item.sectionName))])],1),_vm._v(" "),_c('div',{staticClass:"inner-box clearfix"},_vm._l((item.doctorList),function(doctor){return _c('span',{key:doctor.id},[_c('router-link',{attrs:{"to":{path:'doctorInfo/' + doctor.id}}},[_vm._v(_vm._s(doctor.doctorName))])],1)}))])])}))])])])])],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-row',{staticClass:"clearfix"},[_c('el-col',{attrs:{"span":24}},[_c('div',{staticClass:"main"},[_c('div',{staticClass:"title"},[_c('span',[_vm._v("健康资讯")])]),_vm._v(" "),_c('div',{staticClass:"list"},[_c('ul',_vm._l((_vm.list),function(item){return _c('li',{key:item.id},[_c('router-link',{staticClass:"ellipsis after",attrs:{"to":{path:'healthyDetail/' + item.id}}},[_vm._v(_vm._s(item.healthyTitle))]),_vm._v(" "),_c('span',[_vm._v(_vm._s(item.healthyCreateTime.substring(0,10)))])],1)}))]),_vm._v(" "),_c('div',{staticClass:"block"},[_c('el-pagination',{attrs:{"current-page":_vm.currentPage,"page-sizes":[5, 10, 20, 50],"page-size":10,"layout":_vm.layout,"total":_vm.total},on:{"size-change":_vm.handleSizeChange,"current-change":_vm.handleCurrentChange}})],1)])])],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);

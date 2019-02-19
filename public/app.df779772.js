@@ -4210,75 +4210,79 @@ const app = {
     meta: { title: '首页', icon: 'table' },
     component: () => __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 180))
   }, {
+    path: '/intro',
+    meta: { title: '医院概括', icon: 'form' },
+    component: () => __webpack_require__.e/* import() */(14).then(__webpack_require__.bind(null, 181))
+  }, {
     path: '/doctorList',
     meta: { title: '院内医生', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(15).then(__webpack_require__.bind(null, 181))
+    component: () => __webpack_require__.e/* import() */(16).then(__webpack_require__.bind(null, 182))
   }, {
     path: '/sectionList',
     meta: { title: '院内科室', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 182))
+    component: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 183))
   }, {
     path: '/noticeList',
     meta: { title: '院内公告', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(11).then(__webpack_require__.bind(null, 183))
+    component: () => __webpack_require__.e/* import() */(11).then(__webpack_require__.bind(null, 184))
   }, {
     path: '/newsList',
     meta: { title: '院内新闻', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(12).then(__webpack_require__.bind(null, 184))
+    component: () => __webpack_require__.e/* import() */(12).then(__webpack_require__.bind(null, 185))
   }, {
     path: '/healthyList',
     meta: { title: '健康资讯', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(14).then(__webpack_require__.bind(null, 185))
+    component: () => __webpack_require__.e/* import() */(15).then(__webpack_require__.bind(null, 186))
   }, {
     path: '/envList',
     meta: { title: '医疗环境', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(8).then(__webpack_require__.bind(null, 186))
+    component: () => __webpack_require__.e/* import() */(8).then(__webpack_require__.bind(null, 187))
   }, {
     path: '/noticeDetail/:id(\\d+)',
     hidden: true,
     meta: { title: '公告详情', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 187))
+    component: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 188))
   }, {
     path: '/newsDetail/:id(\\d+)',
     hidden: true,
     meta: { title: '新闻详情', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 188))
+    component: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 189))
   }, {
     path: '/healthyDetail/:id(\\d+)',
     hidden: true,
     meta: { title: '健康资讯详情', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 189))
+    component: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 190))
   }, {
     path: '/sectionInfo/:id(\\d+)',
     hidden: true,
     meta: { title: '科室详情', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 190))
+    component: () => __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 191))
   }, {
     path: '/doctorInfo/:id(\\d+)',
     hidden: true,
     meta: { title: '医生详情', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(9).then(__webpack_require__.bind(null, 191))
+    component: () => __webpack_require__.e/* import() */(9).then(__webpack_require__.bind(null, 192))
   }, {
     path: '/mobileMe',
     hidden: true,
     meta: { title: '我的', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(13).then(__webpack_require__.bind(null, 192))
+    component: () => __webpack_require__.e/* import() */(13).then(__webpack_require__.bind(null, 193))
   }, {
     path: '/order',
     hidden: true,
     meta: { title: '预约记录', icon: 'form' },
-    component: () => __webpack_require__.e/* import() */(10).then(__webpack_require__.bind(null, 193))
+    component: () => __webpack_require__.e/* import() */(10).then(__webpack_require__.bind(null, 194))
   }]
 }, {
   path: '/login',
   hidden: true,
   meta: { title: '用户登录', icon: 'form' },
-  component: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 194))
+  component: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 195))
 }, {
   path: '/register',
   hidden: true,
   meta: { title: '完善信息', icon: 'form' },
-  component: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 195))
+  component: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 196))
 }]);
 
 /***/ }),
