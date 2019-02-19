@@ -42,7 +42,7 @@
     "resources/client/assets/avator/index.jpg",
     "resources/client/assets/icon/line.png",
     "0.35255ee3.js",
-    "app.21ca9d08.js",
+    "app.edf5ae81.js",
     "2.6a5ccba3.js",
     "3.6a4e2d3f.js",
     "4.297c68d2.js",
@@ -57,16 +57,16 @@
     "13.9d2ead72.js",
     "14.f6c42275.js",
     "15.3a92cfe9.js",
-    "runtime.0ac830a2.js",
+    "runtime.1f0eeea5.js",
     "vendor.a15493c9.js",
     "9.82f85417.js",
     "styles.fc2b2d37.css",
     "index.html"
   ],
   "initial": [
-    "runtime.0ac830a2.js",
+    "runtime.1f0eeea5.js",
     "vendor.a15493c9.js",
-    "app.21ca9d08.js"
+    "app.edf5ae81.js"
   ],
   "async": [
     "0.35255ee3.js",
@@ -461,7 +461,7 @@
       25,
       26
     ],
-    "2d2817a4": [
+    "4b4be6ed": [
       41,
       59,
       30,
@@ -3971,7 +3971,7 @@
       25,
       26
     ],
-    "a080a642": [
+    "131b5345": [
       41,
       59,
       30,

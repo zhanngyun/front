@@ -78,7 +78,9 @@ const config = {
     'vue': 'Vue',
     'vue-router': 'VueRouter',
     'element-ui': 'ELEMENT',
-    'axios': 'axios'
+    'axios': 'axios',
+    'vuex': 'Vuex',
+    'vue-lazyload': 'VueLazyload'
   }
 }
 

@@ -79,7 +79,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "http://127.0.0.1:8090/public/";
+/******/ 	__webpack_require__.p = "https://www.hnsqmkyy.com/public/";
 /******/
 /******/ 	// uncatched error handler for webpack runtime
 /******/ 	__webpack_require__.oe = function(err) {
