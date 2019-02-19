@@ -1,5 +1,5 @@
 <template>
-  <el-row v-if="mode">
+  <el-row v-if="!mode">
     <el-col :span="24" class="wrap">
       <div class="logo">
         <router-link  :to="'/'">
@@ -95,7 +95,7 @@ export default {
       'avatar'
     ]),
     mode: function () {
-      return this.$store.state.app.device !== 'mobile'
+      return this.$store.state.app.device === 'mobile'
     },
     routes () {
       return this.$router.options.routes
