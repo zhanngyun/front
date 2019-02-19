@@ -3,5 +3,5 @@ apps:
     name: hnsqmkyy
     env_production:
       NODE_ENV: production
-      HOST: 47.104.104.55
+      HOST: 47.104.104.54
       PORT: 8090
