@@ -8,7 +8,7 @@ exports.modules = {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(214);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_211c8bb6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_247704ea_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(259);
 function injectStyle (ssrContext) {
 var i
 ;(i=__webpack_require__(236),i.__inject__&&i.__inject__(ssrContext),i)
@@ -29,7 +29,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = "1c9025f8"
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_211c8bb6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_247704ea_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -193,6 +193,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
   },
   created() {
     const _that = this;
+    console.log('this.carousel==', this.carousel);
     if (this.carousel.length === 0) {
       this.$store.dispatch('getBannerList').then(data => {
         _that.carousel = data;
@@ -684,7 +685,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(177)
 module.exports.__inject__ = function (context) {
-  add("0a8e2440", content, true, context)
+  add("9ff84fda", content, true, context)
 };
 
 /***/ }),

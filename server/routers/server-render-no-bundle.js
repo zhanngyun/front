@@ -23,8 +23,8 @@ module.exports = async (ctx, renderer, template, bundle) => {
       style: context.renderStyles(),
       scripts: context.renderScripts(),
       title: title.text(),
-      meta: meta.text()
-      // initalState: context.renderState()
+      meta: meta.text(),
+      initalState: context.renderState()
     })
 
     ctx.body = html

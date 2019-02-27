@@ -98,6 +98,7 @@
     },
     created () {
       const _that = this
+      console.log('this.carousel==', this.carousel)
       if (this.carousel.length === 0) {
         this.$store.dispatch('getBannerList').then(data => {
           _that.carousel = data
