@@ -66,17 +66,19 @@ export default {
     await store.dispatch('getPreAndAft', route.params.id)
   },
   created () {
-    if (typeof window !== 'undefined' && this.notice === '') {
+    if (typeof window !== 'undefined') {
       const id = this.common.getId()
-      const _that = this
-      this.$store.dispatch('getNoticeById', id).then(data => {
-        _that.notice = _that.$store.state.notice
-      })
-      this.$store.dispatch('updateClickNum', id).then(data => {})
-      this.$store.dispatch('getPreAndAft', id).then(data => {
-        _that.pre = _that.$store.state.noticePre
-        _that.aft = _that.$store.state.noticeAft
-      })
+      if (id !== this.notice.id) {
+        const _that = this
+        this.$store.dispatch('getNoticeById', id).then(data => {
+          _that.notice = _that.$store.state.notice
+        })
+        this.$store.dispatch('updateClickNum', id).then(data => {})
+        this.$store.dispatch('getPreAndAft', id).then(data => {
+          _that.pre = _that.$store.state.noticePre
+          _that.aft = _that.$store.state.noticeAft
+        })
+      }
     }
   },
   methods: {

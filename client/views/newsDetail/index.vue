@@ -66,17 +66,19 @@ export default {
     await store.dispatch('getNewsPreAndAft', route.params.id)
   },
   created () {
-    if (typeof window !== 'undefined' && this.news === '') {
+    if (typeof window !== 'undefined') {
       const id = this.common.getId()
-      const _that = this
-      this.$store.dispatch('getNewsById', id).then(data => {
-        _that.news = _that.$store.state.news
-      })
-      this.$store.dispatch('updateNewsClickNum', id).then(data => {})
-      this.$store.dispatch('getNewsPreAndAft', id).then(data => {
-        _that.pre = _that.$store.state.newsPre
-        _that.aft = _that.$store.state.newsAft
-      })
+      if (id !== this.news.id) {
+        const _that = this
+        this.$store.dispatch('getNewsById', id).then(data => {
+          _that.news = _that.$store.state.news
+        })
+        this.$store.dispatch('updateNewsClickNum', id).then(data => {})
+        this.$store.dispatch('getNewsPreAndAft', id).then(data => {
+          _that.pre = _that.$store.state.newsPre
+          _that.aft = _that.$store.state.newsAft
+        })
+      }
     }
   },
   methods: {

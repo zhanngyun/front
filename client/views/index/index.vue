@@ -65,7 +65,7 @@
         envList: this.$store.state.envList,
         cols: 8,
         pageTitle: '河南商丘市民康医院官网',
-        pageKeyWords: '河南商丘市民康医院官网,商丘民康医院,民康医院,河南民康医院',
+        pageKeyWords: '河南民康医院官网,商丘民康医院,商丘民康医院官网,河南民康医院',
         pageDescription: '河南商丘市民康医院是二级甲等医院,是一家综合医院,商丘市各县区医疗救助保险定点医疗机构。'
       }
     },

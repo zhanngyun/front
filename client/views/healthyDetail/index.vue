@@ -66,17 +66,19 @@
       await store.dispatch('getHealthyPreAndAft', route.params.id)
     },
     created () {
-      if (typeof window !== 'undefined' && this.healthy === '') {
+      if (typeof window !== 'undefined') {
         const id = this.common.getId()
-        const _that = this
-        this.$store.dispatch('getHealthyById', id).then(data => {
-          _that.healthy = _that.$store.state.healthy
-        })
-        this.$store.dispatch('updateHealthyClickNum', id).then(data => {})
-        this.$store.dispatch('getHealthyPreAndAft', id).then(data => {
-          _that.pre = _that.$store.state.healthyPre
-          _that.aft = _that.$store.state.healthyAft
-        })
+        if (id !== this.healthy.id) {
+          const _that = this
+          this.$store.dispatch('getHealthyById', id).then(data => {
+            _that.healthy = _that.$store.state.healthy
+          })
+          this.$store.dispatch('updateHealthyClickNum', id).then(data => {})
+          this.$store.dispatch('getHealthyPreAndAft', id).then(data => {
+            _that.pre = _that.$store.state.healthyPre
+            _that.aft = _that.$store.state.healthyAft
+          })
+        }
       }
     },
     methods: {
