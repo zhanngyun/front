@@ -104,10 +104,16 @@ export default {
   },
   mounted () {
     if (typeof window !== 'undefined') {
-      this.records = this.type1
-      this.imgSrc = this.records[0].sectionImg
-      this.title = this.records[0].sectionName
-      this.summary = this.records[0].sectionSummary
+      this.records = this.$store.state.selectList1
+      if (this.records.length === 0) {
+        this.$store.dispatch('SectionInfoByType', 1).then(data => {
+          this.type1 = data
+          this.records = this.type1
+          this.imgSrc = this.records[0].sectionImg
+          this.title = this.records[0].sectionName
+          this.summary = this.records[0].sectionSummary
+        })
+      }
     }
   }
 }
