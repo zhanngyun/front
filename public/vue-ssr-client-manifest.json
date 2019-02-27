@@ -41,16 +41,16 @@
     "resources/client/assets/icon/ind_5.png",
     "resources/client/assets/avator/index.jpg",
     "resources/client/assets/icon/line.png",
-    "0.df5846c8.js",
+    "0.be684d5a.js",
     "app.1aefcd9a.js",
     "2.4ae75526.js",
     "3.1786ce6f.js",
-    "4.1ef50db1.js",
+    "4.40f4384c.js",
     "5.573f18e4.js",
     "6.b3307664.js",
     "7.693fcf0e.js",
     "8.5a2f098d.js",
-    "9.740cd6d5.js",
+    "9.fced74fb.js",
     "1.a4b2f1e9.js",
     "11.1d32acfa.js",
     "12.84496e35.js",
@@ -58,27 +58,27 @@
     "14.59b0a5c7.js",
     "15.afe86915.js",
     "16.0bfcbeb8.js",
-    "runtime.17138e2e.js",
+    "runtime.a4108467.js",
     "vendor.a15493c9.js",
     "10.a3528bcd.js",
     "styles.e6703714.css",
     "index.html"
   ],
   "initial": [
-    "runtime.17138e2e.js",
+    "runtime.a4108467.js",
     "vendor.a15493c9.js",
     "app.1aefcd9a.js"
   ],
   "async": [
-    "0.df5846c8.js",
+    "0.be684d5a.js",
     "2.4ae75526.js",
     "3.1786ce6f.js",
-    "4.1ef50db1.js",
+    "4.40f4384c.js",
     "5.573f18e4.js",
     "6.b3307664.js",
     "7.693fcf0e.js",
     "8.5a2f098d.js",
-    "9.740cd6d5.js",
+    "9.fced74fb.js",
     "1.a4b2f1e9.js",
     "11.1d32acfa.js",
     "12.84496e35.js",
@@ -5795,7 +5795,7 @@
       37,
       39
     ],
-    "90c07c0a": [
+    "117373e8": [
       40,
       29,
       30,
@@ -5804,7 +5804,7 @@
       37,
       39
     ],
-    "7892e458": [
+    "8f8d2f2e": [
       40,
       29,
       30,
@@ -5822,7 +5822,7 @@
       37,
       39
     ],
-    "101acf6c": [
+    "5504c77b": [
       40,
       29,
       30,
@@ -6059,22 +6059,22 @@
       35,
       36
     ],
-    "4e589549": [
+    "1c52b42c": [
       44
     ],
-    "610aaa34": [
+    "72f8bb87": [
       44
     ],
-    "592e3590": [
+    "0af782b7": [
       44
     ],
-    "a88f3382": [
+    "77ddfb11": [
       49
     ],
-    "c142adfc": [
+    "6b843dd4": [
       49
     ],
-    "34d25a58": [
+    "ee959874": [
       49
     ],
     "6d63f5d1": [

@@ -565,12 +565,8 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       this.summary = this.records[parseInt(e.srcElement.id)].sectionSummary;
     }
   },
-  created() {
-    console.log('created ... this.type1=', this.type1);
-  },
   mounted() {
     if (typeof window !== 'undefined') {
-      console.log('首页初始化this.type1==', this.type1);
       this.records = this.type1;
       this.imgSrc = this.records[0].sectionImg;
       this.title = this.records[0].sectionName;
@@ -954,7 +950,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(218);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3c0edb7e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_70b4c602_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(254);
 function injectStyle (ssrContext) {
 var i
 ;(i=__webpack_require__(251),i.__inject__&&i.__inject__(ssrContext),i)
@@ -975,7 +971,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = "7ec99300"
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3c0edb7e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_70b4c602_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -999,7 +995,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(177)
 module.exports.__inject__ = function (context) {
-  add("78aa9322", content, true, context)
+  add("2af6c371", content, true, context)
 };
 
 /***/ }),

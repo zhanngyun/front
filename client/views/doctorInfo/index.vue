@@ -106,7 +106,7 @@ export default {
     if (typeof window !== 'undefined') {
       const id = this.common.getId()
       this.orderForm.doctorId = id
-      if (this.data === '') {
+      if (this.data.id !== id) {
         this.$store.dispatch('getDoctorById', id).then(data => {
           _that.data = data
         })

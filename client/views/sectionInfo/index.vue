@@ -81,14 +81,16 @@ export default {
   },
   created () {
     const _that = this
-    if (typeof window !== 'undefined' && this.data === '') {
+    if (typeof window !== 'undefined') {
       const id = this.common.getId()
-      this.$store.dispatch('getSectionById', id).then(data => {
-        _that.data = data
-      })
-      this.$store.dispatch('queryDoctorsBySectionId', id).then(data => {
-        _that.doctors = data.records
-      })
+      if (this.data.id !== id) {
+        this.$store.dispatch('getSectionById', id).then(data => {
+          _that.data = data
+        })
+        this.$store.dispatch('queryDoctorsBySectionId', id).then(data => {
+          _that.doctors = data.records
+        })
+      }
     }
   },
   computed: {

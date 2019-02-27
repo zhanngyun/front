@@ -16,15 +16,15 @@ module.exports = async (ctx, renderer, template, bundle) => {
     const {
       title, meta
     } = context.meta.inject()
-    console.log('title==', title.text())
-    console.log('meta==', meta.text())
+    // console.log('title==', title.text())
+    // console.log('meta==', meta.text())
     const html = ejs.render(template, {
       appString,
       style: context.renderStyles(),
       scripts: context.renderScripts(),
       title: title.text(),
-      meta: meta.text(),
-      initalState: context.renderState()
+      meta: meta.text()
+      // initalState: context.renderState()
     })
 
     ctx.body = html

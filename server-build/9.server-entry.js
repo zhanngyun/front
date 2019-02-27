@@ -8,7 +8,7 @@ exports.modules = {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(231);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e55621c_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_c5addc10_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(295);
 function injectStyle (ssrContext) {
 var i
 ;(i=__webpack_require__(293),i.__inject__&&i.__inject__(ssrContext),i)
@@ -24,12 +24,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-2e55621c"
+var __vue_scopeId__ = "data-v-c5addc10"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = "6059e517"
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2e55621c_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_c5addc10_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -161,7 +161,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
     if (typeof window !== 'undefined') {
       const id = this.common.getId();
       this.orderForm.doctorId = id;
-      if (this.data === '') {
+      if (this.data.id !== id) {
         this.$store.dispatch('getDoctorById', id).then(data => {
           _that.data = data;
         });
@@ -269,7 +269,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(177)
 module.exports.__inject__ = function (context) {
-  add("f5147aee", content, true, context)
+  add("105234f7", content, true, context)
 };
 
 /***/ }),
@@ -282,7 +282,7 @@ exports = module.exports = __webpack_require__(18)(undefined);
 
 
 // module
-exports.push([module.i, ".ellipsisClass[data-v-2e55621c]{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}.img[data-v-2e55621c]{text-align:center;margin-bottom:20px}.dorname[data-v-2e55621c]{background:url(" + __webpack_require__(212) + ") repeat-x 0 100%;padding-bottom:60px;margin-bottom:45px;padding-top:38px}.dorname .title1[data-v-2e55621c]{font-size:24px;color:#333}.dorname .title2[data-v-2e55621c]{font-size:14px;color:#474747;margin-top:20px;line-height:1.4}.text[data-v-2e55621c]{font-size:14px;color:#333;line-height:22px}.text p[data-v-2e55621c]{margin-bottom:20px}.content[data-v-2e55621c]{width:100%;font-size:24px;color:#333;margin-bottom:20px}.content .title[data-v-2e55621c]{line-height:40px}.content .text[data-v-2e55621c]{text-indent:2em;line-height:30px}.mobile .el-table[data-v-2e55621c]{font-size:12px!important}", ""]);
+exports.push([module.i, ".ellipsisClass[data-v-c5addc10]{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}.img[data-v-c5addc10]{text-align:center;margin-bottom:20px}.dorname[data-v-c5addc10]{background:url(" + __webpack_require__(212) + ") repeat-x 0 100%;padding-bottom:60px;margin-bottom:45px;padding-top:38px}.dorname .title1[data-v-c5addc10]{font-size:24px;color:#333}.dorname .title2[data-v-c5addc10]{font-size:14px;color:#474747;margin-top:20px;line-height:1.4}.text[data-v-c5addc10]{font-size:14px;color:#333;line-height:22px}.text p[data-v-c5addc10]{margin-bottom:20px}.content[data-v-c5addc10]{width:100%;font-size:24px;color:#333;margin-bottom:20px}.content .title[data-v-c5addc10]{line-height:40px}.content .text[data-v-c5addc10]{text-indent:2em;line-height:30px}.mobile .el-table[data-v-c5addc10]{font-size:12px!important}", ""]);
 
 // exports
 
