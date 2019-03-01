@@ -3,38 +3,38 @@
     <div class="title">了解这些有可能对您的就诊有所帮助</div>
     <div class="list clearfix">
       <div class="item i1">
-        <a class="vertical" href="https://www.hnsqmkyy.com">
+        <span class="vertical">
           <div class="icon-box">
             <div class="img">
             </div>
             <div class="h2">门诊出诊表</div>
           </div>
-        </a>
+        </span>
       </div><div class="item i2">
-      <a class="vertical" href="https://www.hnsqmkyy.com">
+      <span class="vertical">
         <div class="icon-box">
           <div class="img">
           </div>
           <div class="h2">就医须知</div>
         </div>
-      </a>
+      </span>
     </div><div class="item i3">
-      <a class="vertical" href="https://www.hnsqmkyy.com">
+      <span class="vertical">
         <div class="icon-box">
           <div class="img">
           </div>
           <div class="h2">医院位置</div>
         </div>
-      </a>
+      </span>
     </div>
       <div class="item i4">
-        <a class="vertical" href="https://www.hnsqmkyy.com/healthyList">
+        <span class="vertical">
           <div class="icon-box">
             <div class="img">
             </div>
             <div class="h2">健康体检</div>
           </div>
-        </a>
+        </span>
       </div>
     </div>
   </div>
@@ -80,7 +80,7 @@ export default {
         float: left;
         margin-left: 20px;
         transition: all 0.4s ease;
-        a {
+        span {
           display: block;
           width: 100%;
           height: 100%;
@@ -95,7 +95,7 @@ export default {
             font-size: 0;
           }
         }
-        a:hover {
+        span:hover {
           background-color: #01763a;
           .h2 {
             font-size: 16px;

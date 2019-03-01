@@ -109,10 +109,14 @@ export default {
         this.$store.dispatch('SectionInfoByType', 1).then(data => {
           this.type1 = data
           this.records = this.type1
-          this.imgSrc = this.records[0].sectionImg
-          this.title = this.records[0].sectionName
-          this.summary = this.records[0].sectionSummary
+          this.imgSrc = this.type1[0].sectionImg
+          this.title = this.type1[0].sectionName
+          this.summary = this.type1[0].sectionSummary
         })
+      } else {
+        this.imgSrc = this.records[0].sectionImg
+        this.title = this.records[0].sectionName
+        this.summary = this.records[0].sectionSummary
       }
     }
   }

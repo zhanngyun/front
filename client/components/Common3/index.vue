@@ -2,46 +2,46 @@
   <el-row>
     <el-col :span="cols">
       <div class="item i1">
-        <a class="vertical" href="https://www.hnsqmkyy.com">
+        <span class="vertical">
           <div class="icon-box">
             <div class="img">
             </div>
             <div class="h2">门诊出诊表</div>
           </div>
-        </a>
+        </span>
       </div>
     </el-col>
     <el-col :span="cols">
       <div class="item i2">
-        <a class="vertical" href="https://www.hnsqmkyy.com">
+        <span class="vertical">
           <div class="icon-box">
             <div class="img">
             </div>
             <div class="h2">就医须知</div>
           </div>
-        </a>
+        </span>
       </div>
     </el-col>
     <el-col :span="cols">
       <div class="item i3">
-        <a class="vertical" href="https://www.hnsqmkyy.com">
+        <span class="vertical">
           <div class="icon-box">
             <div class="img">
             </div>
             <div class="h2">医院位置</div>
           </div>
-        </a>
+        </span>
       </div>
     </el-col>
     <el-col :span="cols">
       <div class="item i4">
-        <a class="vertical" href="https://www.hnsqmkyy.com/healthyList">
+        <span class="vertical">
           <div class="icon-box">
             <div class="img">
             </div>
             <div class="h2">健康体检</div>
           </div>
-        </a>
+        </span>
       </div>
     </el-col>
   </el-row>
@@ -77,7 +77,7 @@ export default {
       border: 1px solid #dedede;
       border-radius: 5px;
       transition: all 0.4s ease;
-      a {
+      span {
         display: block;
         width: 100%;
         height: 100%;
@@ -98,7 +98,7 @@ export default {
         transition: all 0.6s ease;
       }
       &.i1 {
-        a {
+        span {
           background-color: #56A5AA;
           .h2 {
             font-size: 16px;
@@ -116,7 +116,7 @@ export default {
         }
       }
       &.i3 {
-        a {
+        span {
           background-color: #e5ca8f;
           .h2 {
             font-size: 16px;
@@ -129,7 +129,7 @@ export default {
         }
       }
       &.i4 {
-        a {
+        span {
           background-color: #01763a;
           .h2 {
             font-size: 16px;

@@ -8,7 +8,7 @@ exports.modules = {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(230);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4e2e553c_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_52b6a789_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(292);
 function injectStyle (ssrContext) {
 var i
 ;(i=__webpack_require__(290),i.__inject__&&i.__inject__(ssrContext),i)
@@ -24,12 +24,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-4e2e553c"
+var __vue_scopeId__ = "data-v-52b6a789"
 /* moduleIdentifier (server only) */
-var __vue_module_identifier__ = "52a91db6"
+var __vue_module_identifier__ = "fd4e0134"
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4e2e553c_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_52b6a789_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -187,7 +187,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(177)
 module.exports.__inject__ = function (context) {
-  add("18dc82f6", content, true, context)
+  add("643aa7bc", content, true, context)
 };
 
 /***/ }),
@@ -200,7 +200,7 @@ exports = module.exports = __webpack_require__(18)(undefined);
 
 
 // module
-exports.push([module.i, ".img[data-v-4e2e553c]{text-align:center;margin-bottom:20px}.img img[data-v-4e2e553c]{width:100%!important;display:block}.text-box[data-v-4e2e553c]{margin-left:30px}.dorname[data-v-4e2e553c]{background:url(" + __webpack_require__(212) + ") repeat-x 0 100%;padding-bottom:60px;margin-bottom:45px;padding-top:38px}.dorname .title1[data-v-4e2e553c]{font-size:24px;color:#333}.dorname .title2[data-v-4e2e553c]{font-size:14px;color:#474747;margin-top:20px;line-height:1.4}.text[data-v-4e2e553c]{font-size:14px;color:#333;line-height:22px}.text p[data-v-4e2e553c]{margin-bottom:20px}.content[data-v-4e2e553c]{font-size:24px;color:#333;margin-bottom:20px}.content .title[data-v-4e2e553c]{line-height:40px}.content .text[data-v-4e2e553c]{text-indent:2em;line-height:30px}.memory[data-v-4e2e553c]{width:100%;color:#333;margin-bottom:20px}.memory .title[data-v-4e2e553c]{font-size:24px;line-height:40px}.memory ul li[data-v-4e2e553c]{width:250px;height:300px;overflow:hidden;position:relative;margin-left:11px;margin-bottom:11px;float:left;list-style:none}.memory ul li img[data-v-4e2e553c]{min-width:100%;width:250px;height:300px}.memory ul li .info[data-v-4e2e553c]{background:url(" + __webpack_require__(202) + ");position:absolute;bottom:0;left:0;right:0;height:auto;text-align:center;min-height:97px}.memory ul li .info .inline[data-v-4e2e553c]{display:inline-block;vertical-align:middle;padding:15px}.memory ul li .info .inline .h2[data-v-4e2e553c]{font-size:18px;color:#fff}.memory ul li .info .inline .p[data-v-4e2e553c]{font-size:14px;color:#fff;line-height:22px;margin-top:8px}", ""]);
+exports.push([module.i, ".img[data-v-52b6a789]{text-align:center;margin-bottom:20px}.img img[data-v-52b6a789]{width:100%!important;display:block}.text-box[data-v-52b6a789]{margin-left:30px}.dorname[data-v-52b6a789]{background:url(" + __webpack_require__(212) + ") repeat-x 0 100%;padding-bottom:60px;margin-bottom:45px;padding-top:38px}.dorname .title1[data-v-52b6a789]{font-size:24px;color:#333}.dorname .title2[data-v-52b6a789]{font-size:14px;color:#474747;margin-top:20px;line-height:1.4}.text[data-v-52b6a789]{font-size:14px;color:#333;line-height:22px}.text p[data-v-52b6a789]{margin-bottom:20px}.content[data-v-52b6a789]{font-size:24px;color:#333;margin-bottom:20px}.content .title[data-v-52b6a789]{line-height:40px}.content .text[data-v-52b6a789]{text-indent:2em;line-height:30px}.memory[data-v-52b6a789]{width:100%;color:#333;margin-bottom:20px}.memory .title[data-v-52b6a789]{font-size:24px;line-height:40px}.memory ul li[data-v-52b6a789]{width:250px;height:300px;overflow:hidden;position:relative;margin-left:11px;margin-bottom:11px;float:left;list-style:none}.memory ul li img[data-v-52b6a789]{min-width:100%;width:250px;height:300px}.memory ul li .info[data-v-52b6a789]{background:url(" + __webpack_require__(202) + ");position:absolute;bottom:0;left:0;right:0;height:auto;text-align:center;min-height:97px}.memory ul li .info .inline[data-v-52b6a789]{display:inline-block;vertical-align:middle;padding:15px}.memory ul li .info .inline .h2[data-v-52b6a789]{font-size:18px;color:#fff}.memory ul li .info .inline .p[data-v-52b6a789]{font-size:14px;color:#fff;line-height:22px;margin-top:8px}", ""]);
 
 // exports
 

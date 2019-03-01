@@ -15,15 +15,15 @@
           <div class="wrap cf">
             <div class="left">
               <div class="siteMap">
-                  <a href="https://www.hnsqmkyy.com">网站地图</a><a href="#" class="last"><router-link  to="/doctorList">关于我们</router-link></a>        </div>
-                <span class="cf address"><span>西院区地址：</span><span class="div"><b>商丘市城乡一体化示范区民主路与中州路交叉口 </b></span></span>
-              <br><span class="cf address"><span>东院区地址：</span><span class="div"><b>商丘市城乡一体化示范区木兰大道与和谐路交叉口南300米路西 </b></span></span>
-                <br><span>咨询电话：<b>0370-3127266 &nbsp;  0370-3127288</b> </span>
-                <br><span>急救电话：<b>0370-6027120</b> </span>
+                  <a href="https://www.hnsqmkyy.com/intro">网站地图</a><router-link class="last"  to="/doctorList">关于我们</router-link>        </div>
+                <span class="cf address"><span>西院区地址：</span><span class="div">商丘市城乡一体化示范区民主路与中州路交叉口 </span></span>
+              <br><span class="cf address"><span>东院区地址：</span><span class="div">商丘市城乡一体化示范区木兰大道与和谐路交叉口南300米路西</span></span>
+                <br><span>咨询电话：0370-3127266 &nbsp;  0370-3127288 </span>
+                <br><span>急救电话：0370-6027120 </span>
               </div>
             <div class="right">
               <span>Copyright 2015-2020 商丘民康医院 All Rights Reserved.             <br> 豫ICP备18039880号 </span><br>
-              <span><a href="https://www.hnsqmkyy.com" target="_blank">网站建设</a>：<span class="chatMe"  @click="chatMe">商丘民康医院</span></span><br/>
+              <span>网站建设：<span class="chatMe"  @click="chatMe">商丘民康医院</span></span><br/>
               <span><img class="gn" src="https://hnsqmkyy.com/img/ga1.png" alt="公安">豫公网安备 41140202000156号</span>
             </div>
           </div>
