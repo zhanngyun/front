@@ -5,6 +5,7 @@ const merge = require('webpack-merge')
 const ExtractPlugin = require('extract-text-webpack-plugin')
 const baseConfig = require('./webpack.config.base')
 const VueClientPlugin = require('vue-server-renderer/client-plugin')
+const cdnConfig = require('../app.config').cdn
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -56,7 +57,8 @@ if (isDev) {
     },
     output: {
       filename: '[name].[chunkhash:8].js',
-      publicPath: '/public/'
+      // publicPath: '/public/'
+      publicPath: cdnConfig.host
     },
     module: {
       rules: [

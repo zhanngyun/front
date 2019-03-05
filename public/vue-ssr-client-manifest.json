@@ -1,5 +1,5 @@
 {
-  "publicPath": "/public/",
+  "publicPath": "https://cdn.hnsqmkyy.com/",
   "all": [
     "resources/client/assets/icon/address1.png",
     "resources/client/assets/icon/foot.jpg",
@@ -42,7 +42,7 @@
     "resources/client/assets/avator/index.jpg",
     "resources/client/assets/icon/line.png",
     "0.7b5a3421.js",
-    "app.626c6386.js",
+    "app.564443ab.js",
     "2.b417f600.js",
     "3.d10dc949.js",
     "4.1668bc03.js",
@@ -58,16 +58,16 @@
     "14.71dcbf48.js",
     "15.e94e57b2.js",
     "16.2db1c7e9.js",
-    "runtime.a9f3f428.js",
+    "runtime.5ac83ad7.js",
     "vendor.a15493c9.js",
     "10.1e9dbe7d.js",
-    "styles.7496acd3.css",
+    "styles.62360389.css",
     "index.html"
   ],
   "initial": [
-    "runtime.a9f3f428.js",
+    "runtime.5ac83ad7.js",
     "vendor.a15493c9.js",
-    "app.626c6386.js"
+    "app.564443ab.js"
   ],
   "async": [
     "0.7b5a3421.js",
@@ -2732,7 +2732,7 @@
       25,
       26
     ],
-    "5656223c": [
+    "7ce057ec": [
       41,
       60,
       31,
@@ -2762,7 +2762,7 @@
       25,
       26
     ],
-    "35a8859b": [
+    "2063798d": [
       41,
       60,
       31,

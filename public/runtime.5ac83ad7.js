@@ -91,7 +91,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + {"0":"7b5a3421","1":"74b4d9d5","2":"b417f600","3":"d10dc949","4":"1668bc03","5":"6bf9444d","6":"ecca8a64","7":"d6d1e747","8":"37a73a01","9":"5469398e","10":"1e9dbe7d","11":"966e4d2f","12":"7feff08e","13":"03b59ed8","14":"71dcbf48","15":"e94e57b2","16":"2db1c7e9","vendor":"a15493c9","app":"626c6386"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + {"0":"7b5a3421","1":"74b4d9d5","2":"b417f600","3":"d10dc949","4":"1668bc03","5":"6bf9444d","6":"ecca8a64","7":"d6d1e747","8":"37a73a01","9":"5469398e","10":"1e9dbe7d","11":"966e4d2f","12":"7feff08e","13":"03b59ed8","14":"71dcbf48","15":"e94e57b2","16":"2db1c7e9","vendor":"a15493c9","app":"564443ab"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -141,7 +141,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/public/";
+/******/ 	__webpack_require__.p = "https://cdn.hnsqmkyy.com/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };

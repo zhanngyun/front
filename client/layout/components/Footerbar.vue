@@ -7,7 +7,7 @@
           <div class="wrap cf">
             <span class="l">友情链接：</span>
             <div class="a">
-              <a href="http://www.nhc.gov.cn" target="_blank">中华人民共和国国家卫生健康委员会</a><a href="http://www.ztzy.com/" class="last" target="_blank">郑州大学第五附属医院</a> </div>
+              <a href="http://www.nhc.gov.cn" target="_blank"  rel="nofollow">中华人民共和国国家卫生健康委员会</a><a href="http://www.ztzy.com/"  rel="nofollow" class="last" target="_blank">郑州大学第五附属医院</a> </div>
           </div>
         </div>
         <!--站内信息-->
@@ -15,7 +15,7 @@
           <div class="wrap cf">
             <div class="left">
               <div class="siteMap">
-                  <a href="https://www.hnsqmkyy.com/intro">网站地图</a><router-link class="last"  to="/doctorList">关于我们</router-link>        </div>
+                  <a href="https://www.hnsqmkyy.com/intro">网站地图</a><router-link class="last"  to="/intro">关于我们</router-link>        </div>
                 <span class="cf address"><span>西院区地址：</span><span class="div">商丘市城乡一体化示范区民主路与中州路交叉口 </span></span>
               <br><span class="cf address"><span>东院区地址：</span><span class="div">商丘市城乡一体化示范区木兰大道与和谐路交叉口南300米路西</span></span>
                 <br><span>咨询电话：0370-3127266 &nbsp;  0370-3127288 </span>

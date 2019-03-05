@@ -4562,7 +4562,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Footerbar_vue__ = __webpack_require__(33);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_dcd2bddc_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Footerbar_vue__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_44ab3563_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Footerbar_vue__ = __webpack_require__(88);
 function injectStyle (ssrContext) {
   __webpack_require__(87)
 }
@@ -4577,12 +4577,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-dcd2bddc"
+var __vue_scopeId__ = "data-v-44ab3563"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Footerbar_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_dcd2bddc_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Footerbar_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_44ab3563_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Footerbar_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -4603,7 +4603,7 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-row',[_c('el-col',{attrs:{"span":24}},[_c('div',{staticClass:"footer"},[_c('div',{staticClass:"link"},[_c('div',{staticClass:"wrap cf"},[_c('span',{staticClass:"l"},[_vm._v("友情链接：")]),_vm._v(" "),_c('div',{staticClass:"a"},[_c('a',{attrs:{"href":"http://www.nhc.gov.cn","target":"_blank"}},[_vm._v("中华人民共和国国家卫生健康委员会")]),_c('a',{staticClass:"last",attrs:{"href":"http://www.ztzy.com/","target":"_blank"}},[_vm._v("郑州大学第五附属医院")])])])]),_vm._v(" "),_c('div',{staticClass:"copy"},[_c('div',{staticClass:"wrap cf"},[_c('div',{staticClass:"left"},[_c('div',{staticClass:"siteMap"},[_c('a',{attrs:{"href":"https://www.hnsqmkyy.com/intro"}},[_vm._v("网站地图")]),_c('router-link',{staticClass:"last",attrs:{"to":"/doctorList"}},[_vm._v("关于我们")])],1),_vm._v(" "),_c('span',{staticClass:"cf address"},[_c('span',[_vm._v("西院区地址：")]),_c('span',{staticClass:"div"},[_vm._v("商丘市城乡一体化示范区民主路与中州路交叉口 ")])]),_vm._v(" "),_c('br'),_c('span',{staticClass:"cf address"},[_c('span',[_vm._v("东院区地址：")]),_c('span',{staticClass:"div"},[_vm._v("商丘市城乡一体化示范区木兰大道与和谐路交叉口南300米路西")])]),_vm._v(" "),_c('br'),_c('span',[_vm._v("咨询电话：0370-3127266    0370-3127288 ")]),_vm._v(" "),_c('br'),_c('span',[_vm._v("急救电话：0370-6027120 ")])]),_vm._v(" "),_c('div',{staticClass:"right"},[_c('span',[_vm._v("Copyright 2015-2020 商丘民康医院 All Rights Reserved.             "),_c('br'),_vm._v(" 豫ICP备18039880号 ")]),_c('br'),_vm._v(" "),_c('span',[_vm._v("网站建设："),_c('span',{staticClass:"chatMe",on:{"click":_vm.chatMe}},[_vm._v("商丘民康医院")])]),_c('br'),_vm._v(" "),_c('span',[_c('img',{staticClass:"gn",attrs:{"src":"https://hnsqmkyy.com/img/ga1.png","alt":"公安"}}),_vm._v("豫公网安备 41140202000156号")])])])])])])],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-row',[_c('el-col',{attrs:{"span":24}},[_c('div',{staticClass:"footer"},[_c('div',{staticClass:"link"},[_c('div',{staticClass:"wrap cf"},[_c('span',{staticClass:"l"},[_vm._v("友情链接：")]),_vm._v(" "),_c('div',{staticClass:"a"},[_c('a',{attrs:{"href":"http://www.nhc.gov.cn","target":"_blank","rel":"nofollow"}},[_vm._v("中华人民共和国国家卫生健康委员会")]),_c('a',{staticClass:"last",attrs:{"href":"http://www.ztzy.com/","rel":"nofollow","target":"_blank"}},[_vm._v("郑州大学第五附属医院")])])])]),_vm._v(" "),_c('div',{staticClass:"copy"},[_c('div',{staticClass:"wrap cf"},[_c('div',{staticClass:"left"},[_c('div',{staticClass:"siteMap"},[_c('a',{attrs:{"href":"https://www.hnsqmkyy.com/intro"}},[_vm._v("网站地图")]),_c('router-link',{staticClass:"last",attrs:{"to":"/intro"}},[_vm._v("关于我们")])],1),_vm._v(" "),_c('span',{staticClass:"cf address"},[_c('span',[_vm._v("西院区地址：")]),_c('span',{staticClass:"div"},[_vm._v("商丘市城乡一体化示范区民主路与中州路交叉口 ")])]),_vm._v(" "),_c('br'),_c('span',{staticClass:"cf address"},[_c('span',[_vm._v("东院区地址：")]),_c('span',{staticClass:"div"},[_vm._v("商丘市城乡一体化示范区木兰大道与和谐路交叉口南300米路西")])]),_vm._v(" "),_c('br'),_c('span',[_vm._v("咨询电话：0370-3127266    0370-3127288 ")]),_vm._v(" "),_c('br'),_c('span',[_vm._v("急救电话：0370-6027120 ")])]),_vm._v(" "),_c('div',{staticClass:"right"},[_c('span',[_vm._v("Copyright 2015-2020 商丘民康医院 All Rights Reserved.             "),_c('br'),_vm._v(" 豫ICP备18039880号 ")]),_c('br'),_vm._v(" "),_c('span',[_vm._v("网站建设："),_c('span',{staticClass:"chatMe",on:{"click":_vm.chatMe}},[_vm._v("商丘民康医院")])]),_c('br'),_vm._v(" "),_c('span',[_c('img',{staticClass:"gn",attrs:{"src":"https://hnsqmkyy.com/img/ga1.png","alt":"公安"}}),_vm._v("豫公网安备 41140202000156号")])])])])])])],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
