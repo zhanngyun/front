@@ -7,7 +7,7 @@
         <router-link  :to="redirect" class="more">更多</router-link>
       </div>
       <div class="common">
-        <ul v-for="item in records" :key="item.id">
+        <ul v-for="(item,index) in records"  :key="item.id" :style="{'visibility': index > 3 ? 'hidden' : 'visible'}">
           <li v-if="activeType === 'notice'"><router-link  :to="{path:'noticeDetail/' + item.id}" class="ellipsis"> {{ item.noticeTitle }}</router-link><span
             class="time">{{ item.noticeCreateTime.substring(0,10) }}</span></li>
           <li v-else-if="activeType === 'news'"><router-link  :to="{path:'newsDetail/' + item.id}" class="ellipsis">{{ item.newsTitle }}</router-link><span

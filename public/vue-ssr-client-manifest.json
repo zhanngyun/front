@@ -41,8 +41,8 @@
     "resources/client/assets/icon/ind_5.png",
     "resources/client/assets/avator/index.jpg",
     "resources/client/assets/icon/line.png",
-    "0.7b5a3421.js",
-    "app.564443ab.js",
+    "0.4b1c9b3a.js",
+    "app.4f06d61d.js",
     "2.b417f600.js",
     "3.d10dc949.js",
     "4.1668bc03.js",
@@ -58,19 +58,19 @@
     "14.71dcbf48.js",
     "15.e94e57b2.js",
     "16.2db1c7e9.js",
-    "runtime.5ac83ad7.js",
+    "runtime.b826488d.js",
     "vendor.a15493c9.js",
     "10.1e9dbe7d.js",
-    "styles.62360389.css",
+    "styles.a13c3654.css",
     "index.html"
   ],
   "initial": [
-    "runtime.5ac83ad7.js",
+    "runtime.b826488d.js",
     "vendor.a15493c9.js",
-    "app.564443ab.js"
+    "app.4f06d61d.js"
   ],
   "async": [
-    "0.7b5a3421.js",
+    "0.4b1c9b3a.js",
     "2.b417f600.js",
     "3.d10dc949.js",
     "4.1668bc03.js",
@@ -2822,7 +2822,7 @@
       25,
       26
     ],
-    "b5482cc4": [
+    "192f55e5": [
       41,
       60,
       31,
@@ -2852,7 +2852,7 @@
       25,
       26
     ],
-    "451d2126": [
+    "3c4ba6ff": [
       41,
       60,
       31,
@@ -5660,7 +5660,7 @@
       46,
       38
     ],
-    "526d1c86": [
+    "ef5254fa": [
       40,
       29,
       30,
@@ -5669,7 +5669,7 @@
       37,
       39
     ],
-    "25c33a6a": [
+    "23081bc8": [
       40,
       29,
       30,
@@ -5687,7 +5687,7 @@
       37,
       39
     ],
-    "5836a85a": [
+    "307e17ad": [
       40,
       29,
       30,
@@ -5696,7 +5696,7 @@
       37,
       39
     ],
-    "bf2d3242": [
+    "78b0d632": [
       40,
       29,
       30,
@@ -5705,7 +5705,7 @@
       37,
       39
     ],
-    "4ef3767a": [
+    "5af42460": [
       40,
       29,
       30,
@@ -5867,7 +5867,7 @@
       37,
       39
     ],
-    "5041e08e": [
+    "44c12f48": [
       40,
       29,
       30,

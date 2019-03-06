@@ -7,7 +7,7 @@ webpackJsonp([0],{
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(216);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_211c8bb6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_647d2a1c_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(261);
 function injectStyle (ssrContext) {
   __webpack_require__(238)
 }
@@ -27,7 +27,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_211c8bb6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_647d2a1c_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -179,9 +179,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
   asyncData({ route, router, store }) {
     return _asyncToGenerator(function* () {
       yield store.dispatch('getBannerList');
-      yield store.dispatch('getNoticeList', { current: 1, size: 4 });
-      yield store.dispatch('getNewsList', { current: 1, size: 4 });
-      yield store.dispatch('getHealthyList', { current: 1, size: 4 });
+      yield store.dispatch('getNoticeList', { current: 1, size: 7 });
+      yield store.dispatch('getNewsList', { current: 1, size: 7 });
+      yield store.dispatch('getHealthyList', { current: 1, size: 7 });
       yield store.dispatch('queryDoctorList', { current: 1, size: 20 });
       yield store.dispatch('SectionInfoByType', 1);
       yield store.dispatch('SectionInfoByType', 2);
@@ -211,14 +211,14 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
         _that.envList = data;
       });
     }
-    if (this.carousel.length === 0 || this.noticeList.length !== 4 || this.newsList.length !== 4 || this.healthyList.length !== 4) {
-      this.$store.dispatch('getNoticeList', { current: 1, size: 4 }).then(data => {
+    if (this.carousel.length === 0 || this.noticeList.length !== 7 || this.newsList.length !== 7 || this.healthyList.length !== 7) {
+      this.$store.dispatch('getNoticeList', { current: 1, size: 7 }).then(data => {
         _that.noticeList = data;
       });
-      this.$store.dispatch('getNewsList', { current: 1, size: 4 }).then(data => {
+      this.$store.dispatch('getNewsList', { current: 1, size: 7 }).then(data => {
         _that.newsList = data;
       });
-      this.$store.dispatch('getHealthyList', { current: 1, size: 4 }).then(data => {
+      this.$store.dispatch('getHealthyList', { current: 1, size: 7 }).then(data => {
         _that.healthyList = data;
       });
     }
@@ -684,7 +684,7 @@ var content = __webpack_require__(239);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(179)("0a8e2440", content, true);
+var update = __webpack_require__(179)("369e9c9d", content, true);
 
 /***/ }),
 
@@ -709,7 +709,7 @@ exports.push([module.i, ".el-carousel__indicator.is-active .el-carousel__button{
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(217);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_e032126e_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0c03c824_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(243);
 function injectStyle (ssrContext) {
   __webpack_require__(241)
 }
@@ -724,12 +724,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-e032126e"
+var __vue_scopeId__ = "data-v-0c03c824"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_e032126e_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0c03c824_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -751,7 +751,7 @@ var content = __webpack_require__(242);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(179)("a18ad320", content, true);
+var update = __webpack_require__(179)("27f4303d", content, true);
 
 /***/ }),
 
@@ -763,7 +763,7 @@ exports = module.exports = __webpack_require__(18)(undefined);
 
 
 // module
-exports.push([module.i, ".healthy[data-v-e032126e]{width:100%!important}.common1[data-v-e032126e]{float:left;width:98%;height:300px;margin-top:10px;margin-bottom:10px;-webkit-box-shadow:0 0 10px rgba(0,0,0,.2);box-shadow:0 0 10px rgba(0,0,0,.2)}.common1 .head[data-v-e032126e]{width:100%;height:50px}.common1 .head .title[data-v-e032126e]{float:left;font-size:20px;margin-left:10px;padding-bottom:10px;line-height:50px}.common1 .head .more[data-v-e032126e]{float:right;font-size:12px;margin-right:10px;line-height:25px;transition:all .3s;-webkit-transition:all .3s;width:90px;margin-top:12px;border:1px solid #eee;border-radius:10px;text-align:center;color:#474747}.common1 .head a[data-v-e032126e]:hover{background-color:#01763a;color:#fff}.common1 .common[data-v-e032126e]{width:100%;height:200px}.common1 .common ul[data-v-e032126e]{width:100%;padding-left:20px}.common1 .common ul li[data-v-e032126e]{list-style:none outside none;padding:0;height:40px;line-height:40px;border-bottom:1px solid #ebeef5;font-size:14px}.common1 .common ul li a[data-v-e032126e]{display:block;text-align:left;text-decoration:none;color:#333;float:left;width:250px}.common1 .common ul li a[data-v-e032126e]:hover{cursor:pointer;outline:none;text-decoration:none;color:#01763a}.common1 .common ul li .ellipsis[data-v-e032126e]{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}.common1 .common ul li .time[data-v-e032126e]{float:right;color:#333;margin-right:20px}.mobile .common1[data-v-e032126e]{width:100%;margin-top:10px;margin-bottom:0}.mobile .common ul li a[data-v-e032126e]{width:150px}.mobile .healthy[data-v-e032126e]{margin-bottom:10px}", ""]);
+exports.push([module.i, ".healthy[data-v-0c03c824]{width:100%!important}.common1[data-v-0c03c824]{float:left;width:98%;height:300px;margin-top:10px;margin-bottom:10px;-webkit-box-shadow:0 0 10px rgba(0,0,0,.2);box-shadow:0 0 10px rgba(0,0,0,.2)}.common1 .head[data-v-0c03c824]{width:100%;height:50px}.common1 .head .title[data-v-0c03c824]{float:left;font-size:20px;margin-left:10px;padding-bottom:10px;line-height:50px}.common1 .head .more[data-v-0c03c824]{float:right;font-size:12px;margin-right:10px;line-height:25px;transition:all .3s;-webkit-transition:all .3s;width:90px;margin-top:12px;border:1px solid #eee;border-radius:10px;text-align:center;color:#474747}.common1 .head a[data-v-0c03c824]:hover{background-color:#01763a;color:#fff}.common1 .common[data-v-0c03c824]{width:100%;height:200px}.common1 .common ul[data-v-0c03c824]{width:100%;padding-left:20px}.common1 .common ul li[data-v-0c03c824]{list-style:none outside none;padding:0;height:40px;line-height:40px;border-bottom:1px solid #ebeef5;font-size:14px}.common1 .common ul li a[data-v-0c03c824]{display:block;text-align:left;text-decoration:none;color:#333;float:left;width:250px}.common1 .common ul li a[data-v-0c03c824]:hover{cursor:pointer;outline:none;text-decoration:none;color:#01763a}.common1 .common ul li .ellipsis[data-v-0c03c824]{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}.common1 .common ul li .time[data-v-0c03c824]{float:right;color:#333;margin-right:20px}.mobile .common1[data-v-0c03c824]{width:100%;margin-top:10px;margin-bottom:0}.mobile .common ul li a[data-v-0c03c824]{width:150px}.mobile .healthy[data-v-0c03c824]{margin-bottom:10px}", ""]);
 
 // exports
 
@@ -774,7 +774,7 @@ exports.push([module.i, ".healthy[data-v-e032126e]{width:100%!important}.common1
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-col',{attrs:{"span":_vm.cols}},[_c('div',{staticClass:"common1",class:_vm.activeType},[_c('div',{staticClass:"head"},[_c('span',{staticClass:"title"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('router-link',{staticClass:"more",attrs:{"to":_vm.redirect}},[_vm._v("更多")])],1),_vm._v(" "),_c('div',{staticClass:"common"},_vm._l((_vm.records),function(item){return _c('ul',{key:item.id},[(_vm.activeType === 'notice')?_c('li',[_c('router-link',{staticClass:"ellipsis",attrs:{"to":{path:'noticeDetail/' + item.id}}},[_vm._v(" "+_vm._s(item.noticeTitle))]),_c('span',{staticClass:"time"},[_vm._v(_vm._s(item.noticeCreateTime.substring(0,10)))])],1):(_vm.activeType === 'news')?_c('li',[_c('router-link',{staticClass:"ellipsis",attrs:{"to":{path:'newsDetail/' + item.id}}},[_vm._v(_vm._s(item.newsTitle))]),_c('span',{staticClass:"time"},[_vm._v(_vm._s(item.newsCreateTime.substring(0,10)))])],1):_c('li',[_c('router-link',{staticClass:"ellipsis",attrs:{"to":{path:'healthyDetail/' + item.id}}},[_vm._v(_vm._s(item.healthyTitle))]),_c('span',{staticClass:"time"},[_vm._v(_vm._s(item.healthyCreateTime.substring(0,10)))])],1)])}))])])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-col',{attrs:{"span":_vm.cols}},[_c('div',{staticClass:"common1",class:_vm.activeType},[_c('div',{staticClass:"head"},[_c('span',{staticClass:"title"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('router-link',{staticClass:"more",attrs:{"to":_vm.redirect}},[_vm._v("更多")])],1),_vm._v(" "),_c('div',{staticClass:"common"},_vm._l((_vm.records),function(item,index){return _c('ul',{key:item.id,style:({'visibility': index > 3 ? 'hidden' : 'visible'})},[(_vm.activeType === 'notice')?_c('li',[_c('router-link',{staticClass:"ellipsis",attrs:{"to":{path:'noticeDetail/' + item.id}}},[_vm._v(" "+_vm._s(item.noticeTitle))]),_c('span',{staticClass:"time"},[_vm._v(_vm._s(item.noticeCreateTime.substring(0,10)))])],1):(_vm.activeType === 'news')?_c('li',[_c('router-link',{staticClass:"ellipsis",attrs:{"to":{path:'newsDetail/' + item.id}}},[_vm._v(_vm._s(item.newsTitle))]),_c('span',{staticClass:"time"},[_vm._v(_vm._s(item.newsCreateTime.substring(0,10)))])],1):_c('li',[_c('router-link',{staticClass:"ellipsis",attrs:{"to":{path:'healthyDetail/' + item.id}}},[_vm._v(_vm._s(item.healthyTitle))]),_c('span',{staticClass:"time"},[_vm._v(_vm._s(item.healthyCreateTime.substring(0,10)))])],1)])}))])])}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);

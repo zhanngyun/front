@@ -87,9 +87,9 @@
     },
     async asyncData ({route, router, store}) {
       await store.dispatch('getBannerList')
-      await store.dispatch('getNoticeList', {current: 1, size: 4})
-      await store.dispatch('getNewsList', {current: 1, size: 4})
-      await store.dispatch('getHealthyList', {current: 1, size: 4})
+      await store.dispatch('getNoticeList', {current: 1, size: 7})
+      await store.dispatch('getNewsList', {current: 1, size: 7})
+      await store.dispatch('getHealthyList', {current: 1, size: 7})
       await store.dispatch('queryDoctorList', {current: 1, size: 20})
       await store.dispatch('SectionInfoByType', 1)
       await store.dispatch('SectionInfoByType', 2)
@@ -118,14 +118,14 @@
           _that.envList = data
         })
       }
-      if (this.carousel.length === 0 || this.noticeList.length !== 4 || this.newsList.length !== 4 || this.healthyList.length !== 4) {
-        this.$store.dispatch('getNoticeList', {current: 1, size: 4}).then(data => {
+      if (this.carousel.length === 0 || this.noticeList.length !== 7 || this.newsList.length !== 7 || this.healthyList.length !== 7) {
+        this.$store.dispatch('getNoticeList', {current: 1, size: 7}).then(data => {
           _that.noticeList = data
         })
-        this.$store.dispatch('getNewsList', {current: 1, size: 4}).then(data => {
+        this.$store.dispatch('getNewsList', {current: 1, size: 7}).then(data => {
           _that.newsList = data
         })
-        this.$store.dispatch('getHealthyList', {current: 1, size: 4}).then(data => {
+        this.$store.dispatch('getHealthyList', {current: 1, size: 7}).then(data => {
           _that.healthyList = data
         })
       }
