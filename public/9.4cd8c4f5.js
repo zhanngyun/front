@@ -7,7 +7,7 @@ webpackJsonp([9],{
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(233);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_374bbeba_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_62fed436_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(297);
 function injectStyle (ssrContext) {
   __webpack_require__(295)
 }
@@ -22,12 +22,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-374bbeba"
+var __vue_scopeId__ = "data-v-62fed436"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_374bbeba_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_62fed436_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -265,7 +265,7 @@ var content = __webpack_require__(296);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(179)("73bf3794", content, true);
+var update = __webpack_require__(179)("cc3e03c8", content, true);
 
 /***/ }),
 
@@ -277,7 +277,7 @@ exports = module.exports = __webpack_require__(18)(undefined);
 
 
 // module
-exports.push([module.i, ".ellipsisClass[data-v-374bbeba]{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}.img[data-v-374bbeba]{text-align:center;margin-bottom:20px}.dorname[data-v-374bbeba]{background:url(" + __webpack_require__(214) + ") repeat-x 0 100%;padding-bottom:60px;margin-bottom:45px;padding-top:38px}.dorname .title1[data-v-374bbeba]{font-size:24px;color:#333}.dorname .title2[data-v-374bbeba]{font-size:14px;color:#474747;margin-top:20px;line-height:1.4}.text[data-v-374bbeba]{font-size:14px;color:#333;line-height:22px}.text p[data-v-374bbeba]{margin-bottom:20px}.content[data-v-374bbeba]{width:100%;font-size:24px;color:#333;margin-bottom:20px}.content .title[data-v-374bbeba]{line-height:40px}.content .text[data-v-374bbeba]{text-indent:2em;line-height:30px}.mobile .el-table[data-v-374bbeba]{font-size:12px!important}", ""]);
+exports.push([module.i, ".ellipsisClass[data-v-62fed436]{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}.img[data-v-62fed436]{text-align:center;margin-bottom:20px}.dorname[data-v-62fed436]{background:url(" + __webpack_require__(214) + ") repeat-x 0 100%;padding-bottom:60px;margin-bottom:45px;padding-top:38px}.dorname .title1[data-v-62fed436]{font-size:24px;color:#333}.dorname .title2[data-v-62fed436]{font-size:14px;color:#474747;margin-top:20px;line-height:1.4}.text[data-v-62fed436]{font-size:14px;color:#333;line-height:22px}.text p[data-v-62fed436]{margin-bottom:20px}.content[data-v-62fed436]{width:100%;font-size:24px;color:#333;margin-bottom:20px}.content .title[data-v-62fed436]{line-height:40px}.content .text[data-v-62fed436]{text-indent:2em;line-height:30px}.mobile .el-table[data-v-62fed436]{font-size:12px!important}", ""]);
 
 // exports
 

@@ -114,6 +114,7 @@
       }
     },
     created () {
+      this.$store.dispatch('LogOut').then(() => {}).catch(() => {})
     },
     methods: {
       dx_yzm_bt () {
