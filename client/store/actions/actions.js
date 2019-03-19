@@ -1,6 +1,6 @@
 import model from 'model'
 import bus from '../../util/bus'
-import {setToken, removeToken, setMobile, getMobile, setUserInfo} from '../../util/auth'
+import {setToken, removeToken, removeMobile, removeUserInfo, setMobile, getMobile, setUserInfo} from '../../util/auth'
 import notify from '../../components/notification/function'
 
 const handleError = (err) => {
@@ -363,6 +363,8 @@ export default {
     return new Promise(resolve => {
       commit('userInfo', '')
       removeToken()
+      removeMobile()
+      removeUserInfo()
       resolve()
     })
   },

@@ -495,11 +495,13 @@ module.exports = require("vue-router");
 
 "use strict";
 /* unused harmony export getToken */
-/* harmony export (immutable) */ __webpack_exports__["d"] = setToken;
-/* harmony export (immutable) */ __webpack_exports__["b"] = removeToken;
-/* harmony export (immutable) */ __webpack_exports__["c"] = setMobile;
+/* harmony export (immutable) */ __webpack_exports__["f"] = setToken;
+/* harmony export (immutable) */ __webpack_exports__["c"] = removeToken;
+/* harmony export (immutable) */ __webpack_exports__["b"] = removeMobile;
+/* harmony export (immutable) */ __webpack_exports__["d"] = removeUserInfo;
+/* harmony export (immutable) */ __webpack_exports__["e"] = setMobile;
 /* harmony export (immutable) */ __webpack_exports__["a"] = getMobile;
-/* harmony export (immutable) */ __webpack_exports__["e"] = setUserInfo;
+/* harmony export (immutable) */ __webpack_exports__["g"] = setUserInfo;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_js_cookie__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_js_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_js_cookie__);
 
@@ -520,6 +522,14 @@ function setToken(token) {
 
 function removeToken() {
   return __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.remove(TokenKey);
+}
+
+function removeMobile() {
+  return __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.remove(mobileKey);
+}
+
+function removeUserInfo() {
+  return __WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.remove(userInfoKey);
 }
 
 function setMobile(mobile) {
@@ -2294,10 +2304,10 @@ const handleError = err => {
     commit('startLoading');
     const mobile = userInfo.mobile.trim();
     commit('SET_MOBILE', mobile);
-    Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["c" /* setMobile */])(mobile);
+    Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["e" /* setMobile */])(mobile);
     return __WEBPACK_IMPORTED_MODULE_0_model__["a" /* default */].login(mobile, userInfo.verificationCode).then(data => {
       commit('endLoading');
-      Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["d" /* setToken */])(data);
+      Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["f" /* setToken */])(data);
       dispatch('GetInfo', mobile);
     }).catch(err => {
       commit('endLoading');
@@ -2309,7 +2319,7 @@ const handleError = err => {
     userInfo.mobile = Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["a" /* getMobile */])();
     return __WEBPACK_IMPORTED_MODULE_0_model__["a" /* default */].perfect(userInfo).then(data => {
       commit('endLoading');
-      Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["d" /* setToken */])(data);
+      Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["f" /* setToken */])(data);
       dispatch('GetInfo', userInfo.mobile);
     }).catch(err => {
       commit('endLoading');
@@ -2321,7 +2331,7 @@ const handleError = err => {
     return __WEBPACK_IMPORTED_MODULE_0_model__["a" /* default */].getInfo(mobile).then(data => {
       commit('endLoading');
       commit('userInfo', data);
-      Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["e" /* setUserInfo */])(data);
+      Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["g" /* setUserInfo */])(data);
     }).catch(err => {
       commit('endLoading');
       handleError(err);
@@ -2331,7 +2341,9 @@ const handleError = err => {
     commit('startLoading');
     return new Promise(resolve => {
       commit('userInfo', '');
-      Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["b" /* removeToken */])();
+      Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["c" /* removeToken */])();
+      Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["b" /* removeMobile */])();
+      Object(__WEBPACK_IMPORTED_MODULE_2__util_auth__["d" /* removeUserInfo */])();
       resolve();
     });
   },

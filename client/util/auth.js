@@ -18,6 +18,14 @@ export function removeToken () {
   return Cookies.remove(TokenKey)
 }
 
+export function removeMobile () {
+  return Cookies.remove(mobileKey)
+}
+
+export function removeUserInfo () {
+  return Cookies.remove(userInfoKey)
+}
+
 export function setMobile (mobile) {
   return Cookies.set(mobileKey, mobile)
 }
