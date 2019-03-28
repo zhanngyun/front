@@ -1,17 +1,17 @@
-webpackJsonp([11],{
+webpackJsonp([15],{
 
-/***/ 184:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(327);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_508da002_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a8b60dd4_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(379);
 function injectStyle (ssrContext) {
-  __webpack_require__(271)
+  __webpack_require__(377)
 }
-var normalizeComponent = __webpack_require__(0)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 
 
@@ -27,7 +27,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_508da002_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a8b60dd4_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -39,7 +39,7 @@ var Component = normalizeComponent(
 
 /***/ }),
 
-/***/ 225:
+/***/ 327:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78,10 +78,10 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 /* harmony default export */ __webpack_exports__["a"] = ({
   metaInfo() {
     return {
-      title: '院内公告| 河南商丘市民康医院官网',
+      title: '健康咨询列表| 河南商丘市民康医院官网',
       meta: [{
         name: 'keywords',
-        content: '河南商丘民康医院院内公告'
+        content: '河南商丘民康医院官网健康咨询列表'
       }, {
         name: 'description',
         content: this.pageDescription
@@ -91,7 +91,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
   name: 'dashboard',
   data() {
     return {
-      list: this.$store.state.noticeList.records,
+      list: [],
       total: 0,
       currentPage: 1,
       pageSize: 10,
@@ -109,53 +109,53 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
   },
   asyncData({ route, router, store }) {
     return _asyncToGenerator(function* () {
-      yield store.dispatch('getNoticeList', { current: 1, size: 10 });
+      yield store.dispatch('getHealthyList', { current: 1, size: 10 });
     })();
   },
   created() {
     if (typeof window !== 'undefined') {
-      this.getNoticePage(1, 10);
+      this.getHealthyPage(1, 10);
     }
   },
   methods: {
-    getNoticePage($v1, $v2) {
+    getHealthyPage($v1, $v2) {
       const _that = this;
-      this.$store.dispatch('getNoticeList', { current: $v1, size: $v2 }).then(data => {
-        _that.list = _that.$store.state.noticeList.records;
-        _that.total = _that.$store.state.noticeList.total;
+      this.$store.dispatch('getHealthyList', { current: $v1, size: $v2 }).then(data => {
+        _that.list = _that.$store.state.healthyList.records;
+        _that.total = _that.$store.state.healthyList.total;
       });
     },
     handleSizeChange(val) {
       this.pageSize = val;
-      this.getNoticePage(1, val);
+      this.getHealthyPage(1, val);
     },
     handleCurrentChange(val) {
       this.currentPage = val;
-      this.getNoticePage(this.currentPage, this.pageSize);
+      this.getHealthyPage(this.currentPage, this.pageSize);
     }
   }
 });
 
 /***/ }),
 
-/***/ 271:
+/***/ 377:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(272);
+var content = __webpack_require__(378);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(179)("a0a98eee", content, true);
+var update = __webpack_require__(279)("66f00320", content, true);
 
 /***/ }),
 
-/***/ 272:
+/***/ 378:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(18)(undefined);
+exports = module.exports = __webpack_require__(24)(undefined);
 // imports
 
 
@@ -167,11 +167,11 @@ exports.push([module.i, ".main{width:100%;margin-bottom:20px}.main,.main .title{
 
 /***/ }),
 
-/***/ 273:
+/***/ 379:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-row',{staticClass:"clearfix"},[_c('el-col',{attrs:{"span":24}},[_c('div',{staticClass:"main"},[_c('div',{staticClass:"title"},[_c('span',[_vm._v("院内公告")])]),_vm._v(" "),_c('div',{staticClass:"list"},[_c('ul',_vm._l((_vm.list),function(item){return _c('li',{key:item.id},[_c('router-link',{staticClass:"ellipsis after",attrs:{"to":{path:'noticeDetail/' + item.id}}},[_vm._v(_vm._s(item.noticeTitle))]),_vm._v(" "),_c('span',[_vm._v(_vm._s(item.noticeCreateTime.substring(0,10)))])],1)}))]),_vm._v(" "),_c('div',{staticClass:"block"},[_c('el-pagination',{attrs:{"current-page":_vm.currentPage,"page-sizes":[5, 10, 20, 50],"page-size":10,"layout":_vm.layout,"total":_vm.total},on:{"size-change":_vm.handleSizeChange,"current-change":_vm.handleCurrentChange}})],1)])])],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-row',{staticClass:"clearfix"},[_c('el-col',{attrs:{"span":24}},[_c('div',{staticClass:"main"},[_c('div',{staticClass:"title"},[_c('span',[_vm._v("健康资讯")])]),_vm._v(" "),_c('div',{staticClass:"list"},[_c('ul',_vm._l((_vm.list),function(item){return _c('li',{key:item.id},[_c('router-link',{staticClass:"ellipsis after",attrs:{"to":{path:'healthyDetail/' + item.id}}},[_vm._v(_vm._s(item.healthyTitle))]),_vm._v(" "),_c('span',[_vm._v(_vm._s(item.healthyCreateTime.substring(0,10)))])],1)}))]),_vm._v(" "),_c('div',{staticClass:"block"},[_c('el-pagination',{attrs:{"current-page":_vm.currentPage,"page-sizes":[5, 10, 20, 50],"page-size":10,"layout":_vm.layout,"total":_vm.total},on:{"size-change":_vm.handleSizeChange,"current-change":_vm.handleCurrentChange}})],1)])])],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);

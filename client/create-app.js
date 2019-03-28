@@ -17,7 +17,7 @@ import VueLazyLoad from 'vue-lazyload' // 图片懒加载
 import Notification from './components/notification'
 import './icons/index' // icon
 if (typeof window !== 'undefined') {
-  // require('element-ui/lib/theme-chalk/index.css')
+  require('element-ui/lib/theme-chalk/index.css')
   require('swiper/dist/css/swiper.css')
   let VueAwesomeSwiper = require('vue-awesome-swiper')
   Vue.use(VueAwesomeSwiper)

@@ -1,17 +1,17 @@
 webpackJsonp([7],{
 
-/***/ 195:
+/***/ 295:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_login_vue__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_login_vue__ = __webpack_require__(336);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0e85aebf_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_login_vue__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0e85aebf_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_login_vue__ = __webpack_require__(407);
 function injectStyle (ssrContext) {
-  __webpack_require__(305)
+  __webpack_require__(405)
 }
-var normalizeComponent = __webpack_require__(0)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 
 
@@ -39,14 +39,14 @@ var Component = normalizeComponent(
 
 /***/ }),
 
-/***/ 215:
+/***/ 315:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "resources/client/assets/avator/index.jpg";
 
 /***/ }),
 
-/***/ 236:
+/***/ 336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -149,7 +149,7 @@ const defaultForm = {
         left: '0px',
         width: '100%',
         height: 'auto',
-        backgroundImage: 'url(' + __webpack_require__(215) + ')',
+        backgroundImage: 'url(' + __webpack_require__(315) + ')',
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat'
       },
@@ -208,24 +208,24 @@ const defaultForm = {
 
 /***/ }),
 
-/***/ 305:
+/***/ 405:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(306);
+var content = __webpack_require__(406);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(179)("6626e26e", content, true);
+var update = __webpack_require__(279)("6626e26e", content, true);
 
 /***/ }),
 
-/***/ 306:
+/***/ 406:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(18)(undefined);
+exports = module.exports = __webpack_require__(24)(undefined);
 // imports
 
 
@@ -237,7 +237,7 @@ exports.push([module.i, ".login-container{border-radius:15px;-moz-border-radius:
 
 /***/ }),
 
-/***/ 307:
+/***/ 407:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

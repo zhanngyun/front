@@ -16,7 +16,7 @@
               <div class="item" v-for="item in data[0].sectionInfoList" v-bind:key="item.id">
                 <div class="inner">
                   <div class="h2">
-                    <router-link  :to="{path:'sectionInfo', query: {id:item.id}}" >{{item.sectionName}}</router-link>
+                    <router-link  :to="{path:'sectionInfo/' + item.id}" >{{item.sectionName}}</router-link>
                   </div>
                   <div class="inner-box clearfix">
                     <span v-for="doctor in item.doctorList" v-bind:key="doctor.id">
@@ -35,7 +35,7 @@
               <div class="item" v-for="item in data[1].sectionInfoList" v-bind:key="item.id">
                 <div class="inner">
                   <div class="h2">
-                    <router-link  :to="{path:'sectionInfo', query: {id:item.id}}">{{item.sectionName}}</router-link>
+                    <router-link  :to="{path:'sectionInfo/' + item.id}">{{item.sectionName}}</router-link>
                   </div>
                   <div class="inner-box clearfix">
                     <span v-for="doctor in item.doctorList" v-bind:key="doctor.id">
@@ -54,7 +54,7 @@
               <div class="item" v-for="item in data[2].sectionInfoList" v-bind:key="item.id">
                 <div class="inner">
                   <div class="h2">
-                    <router-link  :to="{path:'sectionInfo', query: {id:item.id}}">{{item.sectionName}}</router-link>
+                    <router-link  :to="{path:'sectionInfo/' + item.id}">{{item.sectionName}}</router-link>
                   </div>
                   <div class="inner-box clearfix">
                     <span v-for="doctor in item.doctorList" v-bind:key="doctor.id">

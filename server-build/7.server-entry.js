@@ -1,17 +1,17 @@
 exports.ids = [7];
 exports.modules = {
 
-/***/ 193:
+/***/ 197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_login_vue__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_login_vue__ = __webpack_require__(238);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0e85aebf_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_login_vue__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0e85aebf_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_login_vue__ = __webpack_require__(309);
 function injectStyle (ssrContext) {
 var i
-;(i=__webpack_require__(303),i.__inject__&&i.__inject__(ssrContext),i)
+;(i=__webpack_require__(307),i.__inject__&&i.__inject__(ssrContext),i)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -41,14 +41,14 @@ var Component = normalizeComponent(
 
 /***/ }),
 
-/***/ 213:
+/***/ 217:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "resources/client/assets/avator/index.jpg";
 
 /***/ }),
 
-/***/ 234:
+/***/ 238:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -151,7 +151,7 @@ const defaultForm = {
         left: '0px',
         width: '100%',
         height: 'auto',
-        backgroundImage: 'url(' + __webpack_require__(213) + ')',
+        backgroundImage: 'url(' + __webpack_require__(217) + ')',
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat'
       },
@@ -210,27 +210,27 @@ const defaultForm = {
 
 /***/ }),
 
-/***/ 303:
+/***/ 307:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(304);
+var content = __webpack_require__(308);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
-var add = __webpack_require__(177)
+var add = __webpack_require__(181)
 module.exports.__inject__ = function (context) {
   add("6626e26e", content, true, context)
 };
 
 /***/ }),
 
-/***/ 304:
+/***/ 308:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(18)(undefined);
+exports = module.exports = __webpack_require__(10)(undefined);
 // imports
 
 
@@ -242,7 +242,7 @@ exports.push([module.i, ".login-container{border-radius:15px;-moz-border-radius:
 
 /***/ }),
 
-/***/ 305:
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
