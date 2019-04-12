@@ -4,7 +4,7 @@
       <div class="expert">
         <div class="title">医疗环境</div>
         <div class="right">
-          <router-link class="more" :to="'/evnList'">更多</router-link>
+          <router-link class="more" :to="'/envList'">更多</router-link>
         </div>
         <div class="clearfix"></div>
         <div class="block">
