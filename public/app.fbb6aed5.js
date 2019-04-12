@@ -55136,7 +55136,7 @@ const app = {
       opened: !+__WEBPACK_IMPORTED_MODULE_0_js_cookie___default.a.get('sidebarStatus'),
       withoutAnimation: false
     },
-    device: 'mobile'
+    device: 'desktop'
   },
   mutations: {
     TOGGLE_SIDEBAR: state => {
