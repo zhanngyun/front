@@ -24,7 +24,7 @@
             <div class="right">
               <span>Copyright 2015-2020 商丘民康医院 All Rights Reserved.             <br> 豫ICP备18039880号 </span><br>
               <span>网站建设：<span class="chatMe"  @click="chatMe">商丘民康医院</span></span><br/>
-              <span><img class="gn" src="https://hnsqmkyy.com/img/ga1.png" alt="公安">豫公网安备 41140202000156号</span>
+              <span><img class="gn" src="https://hnsqmkyy.com/img/ga1.png" alt="公安"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41140202000156" target="_blank">豫公网安备 41140202000156号</a></span>
             </div>
           </div>
         </div>
